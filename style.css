@@ -1,0 +1,52 @@
+.crystal{
+    animation: float 8s ease-in-out infinite;
+    transform: rotate(25deg);
+    opacity: .45;
+    background-color: #6FD0D4;
+}
+
+.crystal1{
+    animation-duration:8s;
+}
+
+.crystal2{
+    animation-duration:10s;
+    animation-delay:1s;
+}
+
+.crystal3{
+    animation-duration:9s;
+    animation-delay:2s;
+}
+
+.crystal4{
+    animation-duration:11s;
+}
+
+.crystal5{
+    animation-duration:7s;
+}
+
+@keyframes float{
+
+    0%{
+        transform:translateY(0px) rotate(20deg);
+    }
+
+    25%{
+        transform:translateY(-20px) rotate(35deg);
+    }
+
+    50%{
+        transform:translateY(12px) rotate(15deg);
+    }
+
+    75%{
+        transform:translateY(-12px) rotate(40deg);
+    }
+
+    100%{
+        transform:translateY(0px) rotate(20deg);
+    }
+
+}
