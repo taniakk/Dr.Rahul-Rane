@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Branches | Dr. Rahul Rane’s Orthopaedic & Spine Care Clinic</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome & Remix Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+  
+  <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brandNavy: {
+                light: '#6FD0D4',
+                DEFAULT: '#42B7BD',
+                dark: '#1F8FA3',
+                deep: '#0F4752'
+              },
+              brandGold: {
+                light: '#C5E41B',
+                DEFAULT: '#A5D936',
+                dark: '#6FBF2A',
+              },
+              accent: '#F3EA07',
+              brandLight: '#F5FAF8',
+              luxuryGold: '#B38A3D'
+            },
+            fontFamily: {
+              sans: ['Montserrat', 'sans-serif'],
+              serif: ['Cormorant Garamond', 'serif'],
+            }
+          }
+        }
+      }
+    </script>
+  <style>
+    /* Utility delay classes for standard layout load styling animations */
+    .delay-1 { animation-delay: 150ms; }
+    .delay-2 { animation-delay: 300ms; }
+    .delay-3 { animation-delay: 450ms; }
+  </style>
+</head>
+<link rel="stylesheet" href="style.css">
+  <body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+<header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-brandNavy-light/20 shadow-sm relative z-[99999]">
+  <div class="container mx-auto px-6 h-20 flex items-center justify-between">
+    <!-- Logo -->
+    <a href="#home">
+      <div class="flex items-center">
+      <img src="/images/sainitstarlogo.jpeg" alt="Sainit Star Hospital Logo" class="h-14 w-auto object-contain">
+    </div>
+    </a>
+
+    <!-- Desktop Navigation -->
+    <nav class="hidden md:flex items-center gap-10 text-md font-medium tracking-wide">
+      <a href="index.html" class="text-slate-600 hover:text-brandGold transition-colors">Home</a>
+      <a href="about.html" class="text-slate-600 hover:text-brandGold transition-colors">About</a>
+
+      <!-- Services Dropdown (Desktop) -->
+      <div class="relative group">
+        <button class="flex items-center gap-1.5 text-slate-700 hover:text-brandGold transition-all duration-300">
+          Services
+          <i class="fa-solid fa-angle-down text-[10px] transition-all duration-300 group-hover:rotate-180 group-hover:text-brandGold"></i>
+        </button>
+
+        <!-- Dropdown Menu -->
+        <div class="absolute left-1/2 -translate-x-1/2 top-full mt-5 w-64 bg-white rounded-2xl shadow-2xl border border-slate-100 py-2 opacity-0 invisible translate-y-3 group-hover:translate-y-0 group-hover:opacity-100 group-hover:visible transition-all duration-300">
+          <a href="/spinesurgery.html" class="group/item flex items-center gap-3 px-5 py-3 hover:bg-slate-50 transition-all duration-300">
+            <i class="fa-solid fa-bone text-brandGold w-5 transition-all duration-300 group-hover/item:translate-x-1 group-hover/item:scale-110"></i>
+            <span class="text-sm text-slate-700 group-hover/item:text-brandNavy font-medium">Spine Surgery</span>
+          </a>
+          <a href="/jointReplacdement.html" class="group/item flex items-center gap-3 px-5 py-3 hover:bg-slate-50 transition-all duration-300">
+            <i class="fa-solid fa-wheelchair-move text-brandGold w-5 transition-all duration-300 group-hover/item:translate-x-1 group-hover/item:scale-110"></i>
+            <span class="text-sm text-slate-700 group-hover/item:text-brandNavy font-medium">Joint Replacement</span>
+          </a>
+          <a href="/Physiotherapy.html" class="group/item flex items-center gap-3 px-5 py-3 hover:bg-slate-50 transition-all duration-300">
+            <i class="fa-solid fa-person-walking text-brandGold w-5 transition-all duration-300 group-hover/item:translate-x-1 group-hover/item:scale-110"></i>
+            <span class="text-sm text-slate-700 group-hover/item:text-brandNavy font-medium">Physiotherapy</span>
+          </a>
+          <a href="/fracture.html" class="group/item flex items-center gap-3 px-5 py-3 hover:bg-slate-50 transition-all duration-300">
+            <i class="fa-solid fa-truck-medical text-brandGold w-5 transition-all duration-300 group-hover/item:translate-x-1 group-hover/item:scale-110"></i>
+            <span class="text-sm text-slate-700 group-hover/item:text-brandNavy font-medium">Fracture & Accident</span>
+          </a>
+          <a href="/stemtreatment.html" class="group/item flex items-center gap-3 px-5 py-3 hover:bg-slate-50 transition-all duration-300">
+            <i class="fa-solid fa-dna text-brandGold w-5 transition-all duration-300 group-hover/item:translate-x-1 group-hover/item:scale-110"></i>
+            <span class="text-sm text-slate-700 group-hover/item:text-brandNavy font-medium">Stem Cell Treatment</span>
+          </a>
+          <a href="/heightIncrease.html" class="group/item flex items-center gap-3 px-5 py-3 hover:bg-slate-50 transition-all duration-300">
+            <i class="fa-solid fa-arrow-up-right-dots text-brandGold w-5 transition-all duration-300 group-hover/item:translate-x-1 group-hover/item:scale-110"></i>
+            <span class="text-sm text-slate-700 group-hover/item:text-brandNavy font-medium">Height Increase</span>
+          </a>
+        </div>
+      </div>
+
+      <a href="/blog.html" class="text-slate-600 hover:text-brandGold transition-colors">Blog</a>
+      <a href="/branches.html" class="text-slate-600 hover:text-brandGold transition-colors">Branches</a>
+      <a href="/contact.html" class="text-slate-600 hover:text-brandGold transition-colors">Contact</a>
+    </nav>
+
+    <!-- Right Side Actions (Desktop Call to Action + Mobile Hamburger Toggle) -->
+    <div class="flex items-center gap-4">
+      <a href="/contact.html" class="hidden sm:inline-block bg-brandNavy text-white hover:bg-brandNavy-dark px-5 py-2.5 rounded-full text-xs font-bold tracking-wider uppercase transition-all shadow-md shadow-brandNavy/10">
+        Consult Now
+      </a>
+      
+      <!-- Hamburger Menu Button -->
+      <button id="mobileMenuBtn" class="md:hidden text-slate-700 hover:text-brandGold focus:outline-none p-2 transition-colors" aria-label="Toggle Menu">
+        <i class="fa-solid fa-bars text-2xl"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Navigation Panel -->
+ <div id="mobileMenu" class="hidden md:hidden bg-white border-b border-slate-100 max-h-[calc(100vh-5rem)] overflow-y-auto">
+  <nav class="flex flex-col px-6 py-4 gap-4 text-md font-medium">
+    <a href="index.html" class="text-brandNavy-dark py-2 border-b border-slate-50">Home</a>
+    <a href="about.html" class="text-slate-600 py-2 border-b border-slate-50">About</a>
+    
+    <div class="flex flex-col border-b border-slate-50 pb-2">
+      <button id="mobileServicesBtn" class="flex items-center justify-between w-full text-slate-600 py-2 text-left focus:outline-none">
+        <span>Our Services</span>
+        <i class="fa-solid fa-angle-down text-[12px] transition-transform duration-300" id="mobileServicesIcon"></i>
+      </button>
+      
+      <div id="mobileServicesGrid" class="hidden grid grid-cols-1 sm:grid-cols-2 gap-2 pl-4 mt-2 transition-all duration-300">
+        <a href="/spinesurgery.html" class="flex items-center gap-3 py-2 text-sm text-slate-600 hover:text-brandNavy">
+          <i class="fa-solid fa-bone text-brandGold w-5"></i> Spine Surgery
+        </a>
+        <a href="/jointReplacdement.html" class="flex items-center gap-3 py-2 text-sm text-slate-600 hover:text-brandNavy">
+          <i class="fa-solid fa-wheelchair-move text-brandGold w-5"></i> Joint Replacement
+        </a>
+        <a href="/Physiotherapy.html" class="flex items-center gap-3 py-2 text-sm text-slate-600 hover:text-brandNavy">
+          <i class="fa-solid fa-person-walking text-brandGold w-5"></i> Physiotherapy
+        </a>
+        <a href="/fracture.html" class="flex items-center gap-3 py-2 text-sm text-slate-600 hover:text-brandNavy">
+          <i class="fa-solid fa-truck-medical text-brandGold w-5"></i> Fracture & Accident
+        </a>
+        <a href="/stemcell.html" class="flex items-center gap-3 py-2 text-sm text-slate-600 hover:text-brandNavy">
+          <i class="fa-solid fa-dna text-brandGold w-5"></i> Stem Cell Treatment
+        </a>
+        <a href="/heightincrease.html" class="flex items-center gap-3 py-2 text-sm text-slate-600 hover:text-brandNavy">
+          <i class="fa-solid fa-arrow-up-right-dots text-brandGold w-5"></i> Height Increase
+        </a>
+      </div>
+    </div>
+
+    <a href="/blog.html" class="text-slate-600 py-2 border-b border-slate-50">Blog</a>
+    <a href="/branches.html" class="text-slate-600 py-2 border-b border-slate-50">Branches</a>
+    <a href="/contact.html" class="text-slate-600 py-2 pb-4">Contact</a>
+    
+    <a href="/contact.html" class="sm:hidden block text-center bg-brandNavy text-white px-5 py-3 rounded-full text-xs font-bold uppercase tracking-wider">
+      Consult Now
+    </a>
+  </nav>
+</div>
+</header>
+
+<!-- JavaScript Configuration -->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    // Main Mobile Menu Elements
+    const menuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const menuIcon = menuBtn.querySelector('i');
+
+    // Mobile Sub-menu Elements
+    const mobileServicesBtn = document.getElementById('mobileServicesBtn');
+    const mobileServicesGrid = document.getElementById('mobileServicesGrid');
+    const mobileServicesIcon = document.getElementById('mobileServicesIcon');
+
+    // Helper function to completely close everything
+    const closeMenu = () => {
+      if (!mobileMenu.classList.contains('hidden')) {
+        mobileMenu.classList.add('hidden');
+        menuIcon.classList.replace('fa-xmark', 'fa-bars');
+        
+        // Also reset the internal services sub-menu when main panel closes
+        mobileServicesGrid.classList.add('hidden');
+        mobileServicesIcon.classList.remove('rotate-180');
+      }
+    };
+
+    // Main Hamburger Menu Toggle
+    menuBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isHidden = mobileMenu.classList.toggle('hidden');
+      
+      if (isHidden) {
+        menuIcon.classList.replace('fa-xmark', 'fa-bars');
+        // Reset sub-menu state if panel closes
+        mobileServicesGrid.classList.add('hidden');
+        mobileServicesIcon.classList.remove('rotate-180');
+      } else {
+        menuIcon.classList.replace('fa-bars', 'fa-xmark');
+      }
+    });
+
+    // Mobile Services Accordion Dropdown Toggle
+    mobileServicesBtn.addEventListener('click', (e) => {
+      e.stopPropagation(); // Prevents event bubbling
+      const isSubHidden = mobileServicesGrid.classList.toggle('hidden');
+      
+      // Rotate caret arrow icon smoothly
+      if (isSubHidden) {
+        mobileServicesIcon.classList.remove('rotate-180');
+      } else {
+        mobileServicesIcon.classList.add('rotate-180');
+      }
+    });
+
+    // Close menu when scrolling
+    window.addEventListener('scroll', () => {
+      closeMenu();
+    }, { passive: true });
+
+    // Close menu when clicking outside of it
+    document.addEventListener('click', (e) => {
+      if (!mobileMenu.contains(e.target) && !menuBtn.contains(e.target)) {
+        closeMenu();
+      }
+    });
+  });
+</script>
+
+    <div class="py-4 bg-brandLight px-6 md:px-12 flex items-center gap-3 text-sm font-medium border-b border-slate-200">
+      <a href="index.html" class="text-brandNavy hover:text-brandLime transition-colors">Home</a>
+      <i class="fas fa-chevron-right text-xs text-slate-400"></i>
+      <span class="text-brandNavy font-semibold">Our Branches</span>
+    </div>
+
+  <!-- PAGE HERO -->
+  <section class="relative bg-brandNavy-deep text-white py-16 px-6 md:py-24 md:px-12 overflow-hidden relative z-[9999]">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#6FD0D4_1px,transparent_1px)] [background-size:16px_16px]"></div>
+    <div class="container mx-auto relative z-10">
+      <div class="max-w-4xl mx-auto px-4">
+        <h1 class="text-4xl md:text-6xl font-bold font-serif mb-4 leading-tight animate-slide-left">Our Branches</h1>
+        <div class="w-[80px] h-[4px] bg-brandLime animate-scale mb-6 delay-1"></div>
+        <p class="animate-fade-up delay-2 text-slate-300 text-lg md:text-xl max-w-2xl leading-relaxed">
+          Expert orthopedic care, conveniently located across Mumbai. Find a branch near you.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTRODUCTION -->
+  <section class="py-16 bg-white shadow-sm relative">
+    
+    <!-- Floating Crystal 1 -->
+    <div class="absolute top-10 left-10 w-28 h-28 bg-gradient-to-br from-white/80 to-cyan-200/30 rounded-[30%] backdrop-blur-xl border border-white/60 shadow-2xl crystal crystal1"></div>
+
+    <!-- Floating Crystal 2 -->
+    <div class="absolute top-24 right-16 w-20 h-20 bg-gradient-to-br from-blue-100/70 to-white/20 rounded-[35%] backdrop-blur-xl border border-white/60 shadow-xl crystal crystal2"></div>
+
+    <!-- Floating Crystal 3 -->
+    <div class="absolute bottom-16 left-1/4 w-24 h-24 bg-gradient-to-br from-cyan-100/70 to-white/20 rounded-[40%] backdrop-blur-xl border border-white/60 shadow-xl crystal crystal3"></div>
+
+    <!-- Floating Crystal 4 -->
+    <div class="absolute bottom-12 right-1/4 w-32 h-32 bg-gradient-to-br from-white/80 to-blue-200/30 rounded-[28%] backdrop-blur-xl border border-white/60 shadow-2xl crystal crystal4"></div>
+
+    <!-- Floating Crystal 5 -->
+    <div class="absolute top-1/2 left-1/2 w-16 h-16 bg-gradient-to-br from-cyan-100/70 to-white/20 rounded-[30%] backdrop-blur-xl border border-white/60 shadow-lg crystal crystal5"></div>
+    <div class="container mx-auto max-w-5xl px-6 md:px-8 space-y-6 text-base md:text-lg text-slate-600 leading-relaxed ">
+      <p class="animate-fade-up z-[9999]">
+        At Dr. Rahul Rane’s Orthopaedic & Spine Care Clinic, our mission is to
+        make high-quality orthopedic care easily accessible to patients across
+        Mumbai. With multiple branches spread throughout the city, we offer
+        expert consultation, diagnosis, and treatment at your convenience. Our
+        network is recognized among the
+        <strong class="text-brandNavy font-semibold border-b-2 border-brandNavy/40">Best Orthopedic Clinics In Mumbai</strong> for its commitment
+        to advanced care and consistent patient satisfaction.
+      </p>
+      <p class="animate-fade-up delay-1 z-[9999] relative">
+        We currently operate from several key locations, including Powai,
+        Andheri East, Andheri West, Vile Parle, Chembur, and more. Dr. Rane is
+        affiliated with top hospitals such as Hiranandani Hospital, Nanavati
+        Max, Hinduja Healthcare, Criticare Hospital, Raksha Hospital, and
+        Seven Hills Hospital. Each branch provides a full range of
+        services—from consultation and diagnostics to surgery and
+        post-treatment rehabilitation.
+      </p>
+    </div>
+  </section>
+
+  <!-- BRANCHES GRID -->
+  <section class="py-20 bg-slate-50">
+    <div class="container mx-auto px-6 md:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <div class="font-semibold text-brandNavy dark:text-brandNavy-dark tracking-[3px] uppercase mb-2 animate-fade-up">Locations</div>
+        <h2 class="text-3xl md:text-4xl font-bold font-serif text-brandNavy animate-fade-up delay-1">Find a Clinic Near You</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Sainit Star Hospital -->
+        <div class="bg-white rounded-3xl shadow-md border border-slate-100 transition-all duration-500 hover:-translate-y-2 hover:shadow-xl flex flex-col justify-between overflow-hidden animate-scale delay-1">
+          <div class="w-full h-[220px] overflow-hidden bg-slate-100">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d482428.6818171109!2d72.835942!3d19.152612!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b700264bc63d%3A0x68853bb098a81547!2sSainit%20Star%20Multispeciality%20Hospital!5e0!3m2!1sen!2sus!4v1771926988419!5m2!1sen!2sus" class="w-full h-full border-0" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+          <div class="p-6 flex-grow flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold font-serif text-brandBlue mb-3">Sainit Star Hospital</h3>
+              <div class="flex items-start gap-2 text-sm text-slate-600 mb-4">
+                <i class="fas fa-map-marker-alt text-brandLime-dark mt-1 flex-shrink-0"></i>
+                <span>Ground floor, New Link Road, Near Oshiwara Bus Depot, Oshiwara, Goregaon West, Mumbai</span>
+              </div>
+            </div>
+            <span class="inline-block text-xs bg-lime-100 text-brandBlue font-semibold px-3 py-1 rounded-full self-start">Goregaon West</span>
+          </div>
+        </div>
+
+        <!-- Raksha Hospital -->
+        <div class="bg-white rounded-3xl shadow-md border border-slate-100 transition-all duration-500 hover:-translate-y-2 hover:shadow-xl flex flex-col justify-between overflow-hidden animate-scale delay-2">
+          <div class="w-full h-[220px] overflow-hidden bg-slate-100">
+            <iframe class="w-full h-full border-0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d482504.96572218556!2d72.857427!3d19.126509!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c82a2af87cb5%3A0xb04574e6a4377d31!2sRaksha%20Multispeciality%20Hospital%20Pvt%20Ltd!5e0!3m2!1sen!2sus!4v1771926202522!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="p-6 flex-grow flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold font-serif text-brandBlue mb-3">Raksha Hospital</h3>
+              <div class="flex items-start gap-2 text-sm text-slate-600 mb-4">
+                <i class="fas fa-map-marker-alt text-brandLime-dark mt-1 flex-shrink-0"></i>
+                <span>Rajmata Jijabai, Raksha Multispecialty Hospital, Manish Park, ABC Road Pump, Andheri East, Mumbai 400093</span>
+              </div>
+            </div>
+            <span class="inline-block text-xs bg-lime-100 text-brandBlue font-semibold px-3 py-1 rounded-full self-start">Andheri East</span>
+          </div>
+        </div>
+
+        <!-- Hiranandani Hospital -->
+        <div class="bg-white rounded-3xl shadow-md border border-slate-100 transition-all duration-500 hover:-translate-y-2 hover:shadow-xl flex flex-col justify-between overflow-hidden animate-scale delay-3">
+          <div class="w-full h-[220px] overflow-hidden bg-slate-100">
+            <iframe class="w-full h-full border-0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d482522.4568855628!2d72.91695!3d19.120519!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c7ec2c621fe9%3A0x7a2f670986656834!2sDr%20L%20H%20Hiranandani%20Hospital!5e0!3m2!1sen!2sus!4v1771926513405!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="p-6 flex-grow flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold font-serif text-brandBlue mb-3">Hiranandani Hospital</h3>
+              <div class="flex items-start gap-2 text-sm text-slate-600 mb-4">
+                <i class="fas fa-map-marker-alt text-brandLime-dark mt-1 flex-shrink-0"></i>
+                <span>Hiranandani Hospital Rd, Hillside Avenue Road, Hiranandani Gardens, Powai, Mumbai 400076</span>
+              </div>
+            </div>
+            <span class="inline-block text-xs bg-lime-100 text-brandBlue font-semibold px-3 py-1 rounded-full self-start">Powai</span>
+          </div>
+        </div>
+
+        <!-- Nanavati Hospital -->
+        <div class="bg-white rounded-3xl shadow-md border border-slate-100 transition-all duration-500 hover:-translate-y-2 hover:shadow-xl flex flex-col justify-between overflow-hidden animate-scale delay-1">
+          <div class="w-full h-[220px] overflow-hidden bg-slate-100">
+            <iframe class="w-full h-full border-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d146757.46694259485!2d72.64196921225432!3d19.1081954497432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9ba9c34c261%3A0xae93b34cc52f8055!2sNanavati%20Max%20Super%20Speciality%20Hospital%20Mumbai!5e0!3m2!1sen!2sus!4v1771926757490!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="p-6 flex-grow flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold font-serif text-brandBlue mb-3">Nanavati Hospital</h3>
+              <div class="flex items-start gap-2 text-sm text-slate-600 mb-4">
+                <i class="fas fa-map-marker-alt text-brandLime-dark mt-1 flex-shrink-0"></i>
+                <span>Nanavati Hospital, SV Rd, LIC Colony, Suresh Colony, Vile Parle West, Mumbai 400056</span>
+              </div>
+            </div>
+            <span class="inline-block text-xs bg-lime-100 text-brandBlue font-semibold px-3 py-1 rounded-full self-start">Vile Parle West</span>
+          </div>
+        </div>
+
+        <!-- Raheja Vihar Clinic -->
+        <div class="bg-white rounded-3xl shadow-md border border-slate-100 transition-all duration-500 hover:-translate-y-2 hover:shadow-xl flex flex-col justify-between overflow-hidden animate-scale delay-2">
+          <div class="w-full h-[220px] overflow-hidden bg-slate-100">
+            <iframe class="w-full h-full border-0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d120693.49142714436!2d72.809847!3d19.034187!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c8395555554f%3A0x1c8ba431c4e21ecf!2sAnoushka%20Polyclinic!5e0!3m2!1sen!2sus!4v1771927172775!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-dow5ngrade"></iframe>
+          </div>
+          <div class="p-6 flex-grow flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold font-serif text-brandBlue mb-3">Raheja Vihar Clinic</h3>
+              <div class="flex items-start gap-2 text-sm text-slate-600 mb-4">
+                <i class="fas fa-map-marker-alt text-brandLime-dark mt-1 flex-shrink-0"></i>
+                <span>Crystal Centre Building, Raheja Vihar, Chandivali, Powai, Mumbai 400072</span>
+              </div>
+            </div>
+            <span class="inline-block text-xs bg-lime-100 text-brandBlue font-semibold px-3 py-1 rounded-full self-start">Powai / Chandivali</span>
+          </div>
+        </div>
+
+        <!-- Hinduja Hospital -->
+        <div class="bg-white rounded-3xl shadow-md border border-slate-100 transition-all duration-500 hover:-translate-y-2 hover:shadow-xl flex flex-col justify-between overflow-hidden animate-scale delay-3">
+          <div class="w-full h-[220px] overflow-hidden bg-slate-100">
+            <iframe class="w-full h-full border-0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d482675.91000860184!2d72.835347!3d19.06789!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9c937305407%3A0x1b516e73633d6ff8!2sP.%20D.%20Hinduja%20Hospital%20%26%20Medical%20Research%20Centre%2C%20Khar%20Facility!5e0!3m2!1sen!2sus!4v1771927205235!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="p-6 flex-grow flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold font-serif text-brandBlue mb-3">Hinduja Hospital</h3>
+              <div class="flex items-start gap-2 text-sm text-slate-600 mb-4">
+                <i class="fas fa-map-marker-alt text-brandLime-dark mt-1 flex-shrink-0"></i>
+                <span>Marvela, 724, 11th Rd, Khar West, Mumbai 400052</span>
+              </div>
+            </div>
+            <span class="inline-block text-xs bg-lime-100 text-brandBlue font-semibold px-3 py-1 rounded-full self-start">Khar West</span>
+          </div>
+        </div>
+
+        <!-- Godrej Memorial Hospital -->
+        <div class="bg-white rounded-3xl shadow-md border border-slate-100 transition-all duration-500 hover:-translate-y-2 hover:shadow-xl flex flex-col justify-between overflow-hidden animate-scale delay-1">
+          <div class="w-full h-[220px] overflow-hidden bg-slate-100">
+            <iframe class="w-full h-full border-0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d482573.215610618!2d72.927185!3d19.103126!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c7b996a61351%3A0xfdbcf064a047853d!2sTower%20B1%2C%20Pirojshanagar%2C%20Vikhroli%20East%2C%20Mumbai%2C%20Maharashtra%20400079%2C%20India!5e0!3m2!1sen!2sus!4v1771927256437!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="p-6 flex-grow flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold font-serif text-brandBlue mb-3">Godrej Memorial Hospital</h3>
+              <div class="flex items-start gap-2 text-sm text-slate-600 mb-4">
+                <i class="fas fa-map-marker-alt text-brandLime-dark mt-1 flex-shrink-0"></i>
+                <span>Opposite Godrej Platinum, Eastern Express Hwy, Vikhroli, Mumbai 400079</span>
+              </div>
+            </div>
+            <span class="inline-block text-xs bg-lime-100 text-brandBlue font-semibold px-3 py-1 rounded-full self-start">Vikhroli</span>
+          </div>
+        </div>
+
+        <!-- Seven Hills Hospital -->
+        <div class="bg-white rounded-3xl shadow-md border border-slate-100 transition-all duration-500 hover:-translate-y-2 hover:shadow-xl flex flex-col justify-between overflow-hidden animate-scale delay-2">
+          <div class="w-full h-[220px] overflow-hidden bg-slate-100">
+            <iframe class="w-full h-full border-0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d482529.8109431383!2d72.878037!3d19.118!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c817a728ddeb%3A0x9599a624daf494d3!2sSeven%20Hills%20Hospital!5e0!3m2!1sen!2sus!4v1771926790422!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="p-6 flex-grow flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold font-serif text-brandBlue mb-3">Seven Hills Hospital</h3>
+              <div class="flex items-start gap-2 text-sm text-slate-600 mb-4">
+                <i class="fas fa-map-marker-alt text-brandLime-dark mt-1 flex-shrink-0"></i>
+                <span>Marol Maroshi Rd, Mahavir Nagar, Pandit Dindayala Upadhaya Nagar, Andheri East, Mumbai 400059</span>
+              </div>
+            </div>
+            <span class="inline-block text-xs bg-lime-100 text-brandBlue font-semibold px-3 py-1 rounded-full self-start">Andheri East</span>
+          </div>
+        </div>
+
+        <!-- CritiCare Hospital Andheri West -->
+        <div class="bg-white rounded-3xl shadow-md border border-slate-100 transition-all duration-500 hover:-translate-y-2 hover:shadow-xl flex flex-col justify-between overflow-hidden animate-scale delay-3">
+          <div class="w-full h-[220px] overflow-hidden bg-slate-100">
+            <iframe class="w-full h-full border-0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d482536.69412645465!2d72.835378!3d19.115642!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b61874cbfe41%3A0x9f48d184173e1649!2sCritiCare%20Asia%20Multispeciality%20Hospital!5e0!3m2!1sen!2sus!4v1771926843698!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="p-6 flex-grow flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold font-serif text-brandBlue mb-3">CritiCare Hospital (West)</h3>
+              <div class="flex items-start gap-2 text-sm text-slate-600 mb-4">
+                <i class="fas fa-map-marker-alt text-brandLime-dark mt-1 flex-shrink-0"></i>
+                <span>Plot Number 38, 39, Gulmohar Rd, JVPD Scheme, Andheri West, Mumbai 400049</span>
+              </div>
+            </div>
+            <span class="inline-block text-xs bg-lime-100 text-brandBlue font-semibold px-3 py-1 rounded-full self-start">Andheri West</span>
+          </div>
+        </div>
+
+        <!-- CritiCare Hospital Andheri East -->
+        <div class="bg-white rounded-3xl shadow-md border border-slate-100 transition-all duration-500 hover:-translate-y-2 hover:shadow-xl flex flex-col justify-between overflow-hidden animate-scale delay-1">
+          <div class="w-full h-[220px] overflow-hidden bg-slate-100">
+            <iframe class="w-full h-full border-0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d482529.4985825263!2d72.850563!3d19.118107!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9d2b8b66147%3A0x956f946cab5864c1!2sCriticare%20Hospital!5e0!3m2!1sen!2sus!4v1771926899913!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="p-6 flex-grow flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold font-serif text-brandBlue mb-3">CritiCare Hospital (East)</h3>
+              <div class="flex items-start gap-2 text-sm text-slate-600 mb-4">
+                <i class="fas fa-map-marker-alt text-brandLime-dark mt-1 flex-shrink-0"></i>
+                <span>Plot No 516, Besides SBI, Teli Gali, Andheri East, Mumbai 400069</span>
+              </div>
+            </div>
+            <span class="inline-block text-xs bg-lime-100 text-brandBlue font-semibold px-3 py-1 rounded-full self-start">Andheri East</span>
+          </div>
+        </div>
+
+        <!-- Arnav Orthopedic & Physio Clinic -->
+        <div class="bg-white rounded-3xl shadow-md border border-slate-100 transition-all duration-500 hover:-translate-y-2 hover:shadow-xl flex flex-col justify-between overflow-hidden animate-scale delay-2">
+          <div class="w-full h-[220px] overflow-hidden bg-slate-100">
+            <iframe class="w-full h-full border-0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d482448.60202969186!2d72.895692!3d19.111562!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c90023ee6cd7%3A0xcda0f1227c6b1b1b!2sShree%20Ram%20Darshan!5e0!3m2!1sen!2sus!4v1771926938204!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="p-6 flex-grow flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold font-serif text-brandBlue mb-3">Arnav Orthopedic & Physio Clinic</h3>
+              <div class="flex items-start gap-2 text-sm text-slate-600 mb-4">
+                <i class="fas fa-map-marker-alt text-brandLime-dark mt-1 flex-shrink-0"></i>
+                <span>Shree Ram Darshan Apartment, Bldg 13, Ground Floor, MHADA Colony, Chandivali, Powai, Mumbai 400072</span>
+              </div>
+            </div>
+            <span class="inline-block text-xs bg-lime-100 text-brandBlue font-semibold px-3 py-1 rounded-full self-start">Powai / Chandivali</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- KEY FEATURES -->
+  <section class="py-20 bg-brandBlue text-brandNavy ">
+    
+    
+    <!-- Floating Crystal 1 -->
+    <div class="absolute top-10 left-10 w-28 h-28 bg-gradient-to-br from-white/80 to-cyan-200/30 rounded-[30%] backdrop-blur-xl border border-white/60 shadow-2xl crystal crystal1"></div>
+
+    <!-- Floating Crystal 2 -->
+    <div class="absolute top-24 right-16 w-20 h-20 bg-gradient-to-br from-blue-100/70 to-white/20 rounded-[35%] backdrop-blur-xl border border-white/60 shadow-xl crystal crystal2"></div>
+
+    <!-- Floating Crystal 3 -->
+    <div class="absolute bottom-16 left-1/4 w-24 h-24 bg-gradient-to-br from-cyan-100/70 to-white/20 rounded-[40%] backdrop-blur-xl border border-white/60 shadow-xl crystal crystal3"></div>
+
+    <!-- Floating Crystal 4 -->
+    <div class="absolute bottom-12 right-1/4 w-32 h-32 bg-gradient-to-br from-white/80 to-blue-200/30 rounded-[28%] backdrop-blur-xl border border-white/60 shadow-2xl crystal crystal4"></div>
+
+    <!-- Floating Crystal 5 -->
+    <div class="absolute top-1/2 left-1/2 w-16 h-16 bg-gradient-to-br from-cyan-100/70 to-white/20 rounded-[30%] backdrop-blur-xl border border-white/60 shadow-lg crystal crystal5"></div>
+    
+    <div class="container mx-auto px-6 md:px-8 z-[9999] relative">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <div class="font-semibold text-brandLime uppercase tracking-[2px] mb-2">Why Choose Our Network</div>
+        <h2 class="text-3xl md:text-4xl font-bold font-serif animate-fade-up">Consistent Excellence Across Branches</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Standard 1 -->
+        <div class="bg-brandNavy p-8 rounded-3xl border border-slate-700/60 transition-all duration-300 hover:scale-[1.02] hover:border-brandLime/30 animate-scale delay-1">
+          <div class="w-14 h-14 rounded-2xl bg-white flex items-center justify-center text-brandLime text-2xl mb-6">
+            <i class="fas fa-stethoscope"></i>
+          </div>
+          <h4 class="text-xl font-bold font-serif text-white mb-3">Same High Standards</h4>
+          <p class="text-white leading-relaxed text-sm md:text-base">
+            Whether you visit us for spine surgery, joint replacement, or stem cell therapy, you'll find the same high standards of care at every center.
+          </p>
+        </div>
+
+        <!-- Standard 2 -->
+        <div class="bg-brandNavy p-8 rounded-3xl border border-slate-700/60 transition-all duration-300 hover:scale-[1.02] hover:border-brandLime/30 animate-scale delay-2">
+          <div class="w-14 h-14 rounded-2xl bg-white flex items-center justify-center text-brandLime text-2xl mb-6">
+            <i class="fas fa-calendar-check"></i>
+          </div>
+          <h4 class="text-xl font-bold font-serif text-white mb-3">Central Appointment System</h4>
+          <p class="text-white leading-relaxed text-sm md:text-base">
+            Our central appointment system makes scheduling easy, and all patient records are securely maintained for seamless continuity of care across branches.
+          </p>
+        </div>
+
+        <!-- Standard 3 -->
+        <div class="bg-brandNavy p-8 rounded-3xl border border-slate-700/60 transition-all duration-300 hover:scale-[1.02] hover:border-brandLime/30 animate-scale delay-3">
+          <div class="w-14 h-14 rounded-2xl bg-white flex items-center justify-center text-brandLime text-2xl mb-6">
+            <i class="fas fa-user-md"></i>
+          </div>
+          <h4 class="text-xl font-bold font-serif text-white mb-3">Dr. Rane's Personal Oversight</h4>
+          <p class="text-white leading-relaxed text-sm md:text-base">
+            Dr. Rane personally supervises clinical decisions and treatment plans to ensure consistency and quality across all locations.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- AFFILIATIONS -->
+  <section class="py-16 bg-white text-center">
+
+    <div class="container mx-auto px-6 md:px-8">
+      <span class="font-serif text-sm md:text-base font-semibold text-brandNavy-dark tracking-[3px] uppercase mb-3 block">Our Partners</span>
+      <h2 class="text-2xl md:text-3xl font-bold font-serif text-brandNavy  mb-10">Associated With Leading Hospitals</h2>
+      <div class="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
+        <span class="bg-slate-50 px-6 py-3 rounded-full text-brandBlue-dark font-serif font-semibold shadow-sm border border-brandNavy hover:border-brandGold-light hover:text-brandGold-light transition-all duration-300">Hiranandani Hospital</span>
+        <span class="bg-slate-50 px-6 py-3 rounded-full text-brandBlue-dark font-serif font-semibold shadow-sm border border-brandNavy hover:border-brandGold-light hover:text-brandGold-light">Nanavati Max</span>
+        <span class="bg-slate-50 px-6 py-3 rounded-full text-brandBlue-dark font-serif font-semibold shadow-sm border border-brandNavy hover:border-brandGold-light hover:text-brandGold-light">Hinduja Healthcare</span>
+        <span class="bg-slate-50 px-6 py-3 rounded-full text-brandBlue-dark font-serif font-semibold shadow-sm border border-brandNavy hover:border-brandGold-light hover:text-brandGold-light">Criticare Hospital</span>
+        <span class="bg-slate-50 px-6 py-3 rounded-full text-brandBlue-dark font-serif font-semibold shadow-sm border border-brandNavy hover:border-brandGold-light hover:text-brandGold-light">Raksha Hospital</span>
+        <span class="bg-slate-50 px-6 py-3 rounded-full text-brandBlue-dark font-serif font-semibold shadow-sm border border-brandNavy hover:border-brandGold-light hover:text-brandGold-light">Seven Hills Hospital</span>
+        <span class="bg-slate-50 px-6 py-3 rounded-full text-brandBlue-dark font-serif font-semibold shadow-sm border border-brandNavy hover:border-brandGold-light hover:text-brandGold-light ">Godrej Memorial</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+   <footer class="bg-slate-950 text-white pt-20 pb-10 border-t border-slate-900 relative z-10">
+      <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 pb-16 border-b border-white/10">
+        
+      <div class="lg:col-span-4 space-y-6">
+  <!-- Logo -->
+  <img
+    src="/images/sainitstarlogo.jpeg"
+    alt="Sainit Star Logo"
+    class="h-16 w-auto object-contain"
+  >
+
+  <p class="text-slate-400 text-xs leading-relaxed max-w-sm">
+    Orthopaedic surgeon with expertise in joint replacement and spine surgery. Spine surgery using endoscopy. Orthopaedic minimally invasive surgery.
+  </p>
+</div>
+
+        <div class="lg:col-span-2 space-y-4">
+          <h3 class="font-serif text-lg font-semibold text-brandGold">Quick Links</h3>
+          <ul class="space-y-2.5 text-xs text-slate-400 font-medium">
+            <li><a href="/index.html" class="hover:text-brandGold transition-colors">Home</a></li>
+            <li><a href="/about.html" class="hover:text-brandGold transition-colors">About</a></li>
+            <li><a href="/blog.html" class="hover:text-brandGold transition-colors">Blog</a></li>
+            <li><a href="/branches.html" class="hover:text-brandGold transition-colors">Branches</a></li>
+            <li><a href="/contact.html" class="hover:text-brandGold transition-colors">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="lg:col-span-3 space-y-4">
+          <h3 class="font-serif text-lg font-semibold text-brandGold">Our Services</h3>
+          <ul class="space-y-2.5 text-xs text-slate-400 font-medium">
+            <li><a href="/spinesurgery.html" class="hover:text-brandGold transition-colors">Spines Surgery</a></li>
+            <li><a href="/jointReplacdement.html" class="hover:text-brandGold transition-colors">Joint Replacement</a></li>
+            <li><a href="/fracture.html" class="hover:text-brandGold transition-colors">Fracture & Accident</a></li>
+            <li><a href="/Physiotherapy.html" class="hover:text-brandGold transition-colors">Physiotherapy</a></li>
+            <li><a href="/stemtreatment.html" class="hover:text-brandGold transition-colors">Stem Cell Treatment</a></li>
+            <li><a href="/heightIncrease.html" class="hover:text-brandGold transition-colors">Height Increase</a></li>
+          </ul>
+        </div>
+
+        <div class="lg:col-span-3 space-y-4">
+          <h3 class="font-serif text-lg font-semibold text-brandGold">Contact Us</h3>
+          <div class="space-y-3 text-xs text-slate-400 font-medium">
+            <a href="tel:+919833011340" class="flex items-center gap-2 hover:text-brandGold transition-colors"><i class="ri-phone-fill text-brandGold"></i> +91 9833011340</a>
+            <a href="mailto:info@drrahulrane.in" class="flex items-center gap-2 hover:text-brandGold transition-colors"><i class="ri-mail-fill text-brandGold"></i> info@drrahulrane.in</a>
+          </div>
+          <div class="flex gap-3 pt-2">
+            <a href="https://www.linkedin.com/in/dr-rahul-rane/" target="_blank" class="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-300 hover:bg-brandGold hover:text-brandNavy-deep transition-all text-sm"><i class="ri-linkedin-fill"></i></a>
+            <a href="https://www.facebook.com/share/1bnE7VxinB/" target="_blank" class="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-300 hover:bg-brandGold hover:text-brandNavy-deep transition-all text-sm"><i class="ri-facebook-circle-fill"></i></a>
+            <a href="https://www.instagram.com/dr.rahulrane?igsh=MTZqcHlhOTdmcWo2MQ==" target="_blank" class="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-300 hover:bg-brandGold hover:text-brandNavy-deep transition-all text-sm"><i class="ri-instagram-fill"></i></a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="container mx-auto px-6 pt-8 text-center text-[11px] text-slate-500 font-medium tracking-wide">
+        © 2026 Dr. Rahul Rane. All Rights Reserved. Engineered with Luxury Digital Medicine Frameworks.
+      </div>
+    </footer>
+
+    <div class="fixed bottom-8 right-8 z-[999] flex flex-col gap-3">
+      <button id="whatsapp-btn" aria-label="Chat on WhatsApp" class="w-14 h-14 bg-[#25D366] text-white rounded-full flex items-center justify-center text-2xl shadow-xl hover:scale-110 transition-transform">
+        <i class="ri-whatsapp-fill"></i>
+      </button>
+      <a href="#" aria-label="Scroll up" class="w-14 h-14 bg-brandGold text-brandNavy-deep rounded-full flex items-center justify-center text-lg shadow-xl hover:scale-110 transition-transform">
+        <i class="fas fa-arrow-up"></i>
+      </a>
+    </div>
+
+  <!-- WhatsApp Redirection Interceptor Script -->
+  <script>
+    document.querySelector(".whatsapp-msg").addEventListener('click', function (e) {
+      e.preventDefault();
+      let num = "+919833011340"
+      let msg = "Enquiry from website"
+      let encoded = encodeURIComponent(msg);
+      let url = `https://wa.me/${num}?text=${encoded}`
+      window.open(url, "_blank");
+    })
+  </script>
+</body>
+</html>

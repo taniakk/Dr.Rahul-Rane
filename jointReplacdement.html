@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joint Replacement | Dr. Rahul Rane’s Orthopaedic & Spine Care Clinic</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+       
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+   
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Custom Style Sheet Link -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandNavy: {
+                            light: '#6FD0D4',
+                            DEFAULT: '#42B7BD',
+                            dark: '#1F8FA3',
+                            deep: '#0F4752'
+                        },
+                        brandGold: {
+                            light: '#C5E41B',
+                            DEFAULT: '#A5D936',
+                            dark: '#6FBF2A',
+                        },
+                        accent: '#F3EA07',
+                        brandLight: '#F5FAF8',
+                        luxuryGold: '#B38A3D'
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                        serif: ['Cormorant Garamond', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brandLight text-slate-800 font-sans antialiased">
+
+<header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-brandNavy-light/20 shadow-sm">
+  <div class="container mx-auto px-6 h-20 flex items-center justify-between">
+    <!-- Logo -->
+    <a href="#home">
+      <div class="flex items-center">
+      <img src="/images/sainitstarlogo.jpeg" alt="Sainit Star Hospital Logo" class="h-14 w-auto object-contain">
+    </div>
+    </a>
+
+    <!-- Desktop Navigation -->
+    <nav class="hidden md:flex items-center gap-10 text-md font-medium tracking-wide">
+      <a href="index.html" class="text-slate-600 hover:text-brandGold transition-colors">Home</a>
+      <a href="about.html" class="text-slate-600 hover:text-brandGold transition-colors">About</a>
+
+      <!-- Services Dropdown (Desktop) -->
+      <div class="relative group">
+        <button class="flex items-center gap-1.5 text-slate-700 hover:text-brandGold transition-all duration-300">
+          Services
+          <i class="fa-solid fa-angle-down text-[10px] transition-all duration-300 group-hover:rotate-180 group-hover:text-brandGold"></i>
+        </button>
+
+        <!-- Dropdown Menu -->
+        <div class="absolute left-1/2 -translate-x-1/2 top-full mt-5 w-64 bg-white rounded-2xl shadow-2xl border border-slate-100 py-2 opacity-0 invisible translate-y-3 group-hover:translate-y-0 group-hover:opacity-100 group-hover:visible transition-all duration-300">
+          <a href="/spinesurgery.html" class="group/item flex items-center gap-3 px-5 py-3 hover:bg-slate-50 transition-all duration-300">
+            <i class="fa-solid fa-bone text-brandGold w-5 transition-all duration-300 group-hover/item:translate-x-1 group-hover/item:scale-110"></i>
+            <span class="text-sm text-slate-700 group-hover/item:text-brandNavy font-medium">Spine Surgery</span>
+          </a>
+          <a href="/jointReplacdement.html" class="group/item flex items-center gap-3 px-5 py-3 hover:bg-slate-50 transition-all duration-300">
+            <i class="fa-solid fa-wheelchair-move text-brandGold w-5 transition-all duration-300 group-hover/item:translate-x-1 group-hover/item:scale-110"></i>
+            <span class="text-sm text-slate-700 group-hover/item:text-brandNavy font-medium">Joint Replacement</span>
+          </a>
+          <a href="/Physiotherapy.html" class="group/item flex items-center gap-3 px-5 py-3 hover:bg-slate-50 transition-all duration-300">
+            <i class="fa-solid fa-person-walking text-brandGold w-5 transition-all duration-300 group-hover/item:translate-x-1 group-hover/item:scale-110"></i>
+            <span class="text-sm text-slate-700 group-hover/item:text-brandNavy font-medium">Physiotherapy</span>
+          </a>
+          <a href="/fracture.html" class="group/item flex items-center gap-3 px-5 py-3 hover:bg-slate-50 transition-all duration-300">
+            <i class="fa-solid fa-truck-medical text-brandGold w-5 transition-all duration-300 group-hover/item:translate-x-1 group-hover/item:scale-110"></i>
+            <span class="text-sm text-slate-700 group-hover/item:text-brandNavy font-medium">Fracture & Accident</span>
+          </a>
+          <a href="/stemtreatment.html" class="group/item flex items-center gap-3 px-5 py-3 hover:bg-slate-50 transition-all duration-300">
+            <i class="fa-solid fa-dna text-brandGold w-5 transition-all duration-300 group-hover/item:translate-x-1 group-hover/item:scale-110"></i>
+            <span class="text-sm text-slate-700 group-hover/item:text-brandNavy font-medium">Stem Cell Treatment</span>
+          </a>
+          <a href="/heightIncrease.html" class="group/item flex items-center gap-3 px-5 py-3 hover:bg-slate-50 transition-all duration-300">
+            <i class="fa-solid fa-arrow-up-right-dots text-brandGold w-5 transition-all duration-300 group-hover/item:translate-x-1 group-hover/item:scale-110"></i>
+            <span class="text-sm text-slate-700 group-hover/item:text-brandNavy font-medium">Height Increase</span>
+          </a>
+        </div>
+      </div>
+
+      <a href="/blog.html" class="text-slate-600 hover:text-brandGold transition-colors">Blog</a>
+      <a href="/branches.html" class="text-slate-600 hover:text-brandGold transition-colors">Branches</a>
+      <a href="/contact.html" class="text-slate-600 hover:text-brandGold transition-colors">Contact</a>
+    </nav>
+
+    <!-- Right Side Actions (Desktop Call to Action + Mobile Hamburger Toggle) -->
+    <div class="flex items-center gap-4">
+      <a href="/contact.html" class="hidden sm:inline-block bg-brandNavy text-white hover:bg-brandNavy-dark px-5 py-2.5 rounded-full text-xs font-bold tracking-wider uppercase transition-all shadow-md shadow-brandNavy/10">
+        Consult Now
+      </a>
+      
+      <!-- Hamburger Menu Button -->
+      <button id="mobileMenuBtn" class="md:hidden text-slate-700 hover:text-brandGold focus:outline-none p-2 transition-colors" aria-label="Toggle Menu">
+        <i class="fa-solid fa-bars text-2xl"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Navigation Panel -->
+ <div id="mobileMenu" class="hidden md:hidden bg-white border-b border-slate-100 max-h-[calc(100vh-5rem)] overflow-y-auto">
+  <nav class="flex flex-col px-6 py-4 gap-4 text-md font-medium">
+    <a href="index.html" class="text-brandNavy-dark py-2 border-b border-slate-50">Home</a>
+    <a href="about.html" class="text-slate-600 py-2 border-b border-slate-50">About</a>
+    
+    <div class="flex flex-col border-b border-slate-50 pb-2">
+      <button id="mobileServicesBtn" class="flex items-center justify-between w-full text-slate-600 py-2 text-left focus:outline-none">
+        <span>Our Services</span>
+        <i class="fa-solid fa-angle-down text-[12px] transition-transform duration-300" id="mobileServicesIcon"></i>
+      </button>
+      
+      <div id="mobileServicesGrid" class="hidden grid grid-cols-1 sm:grid-cols-2 gap-2 pl-4 mt-2 transition-all duration-300">
+        <a href="/spinesurgery.html" class="flex items-center gap-3 py-2 text-sm text-slate-600 hover:text-brandNavy">
+          <i class="fa-solid fa-bone text-brandGold w-5"></i> Spine Surgery
+        </a>
+        <a href="/jointReplacdement.html" class="flex items-center gap-3 py-2 text-sm text-slate-600 hover:text-brandNavy">
+          <i class="fa-solid fa-wheelchair-move text-brandGold w-5"></i> Joint Replacement
+        </a>
+        <a href="/Physiotherapy.html" class="flex items-center gap-3 py-2 text-sm text-slate-600 hover:text-brandNavy">
+          <i class="fa-solid fa-person-walking text-brandGold w-5"></i> Physiotherapy
+        </a>
+        <a href="/fracture.html" class="flex items-center gap-3 py-2 text-sm text-slate-600 hover:text-brandNavy">
+          <i class="fa-solid fa-truck-medical text-brandGold w-5"></i> Fracture & Accident
+        </a>
+        <a href="/stemcell.html" class="flex items-center gap-3 py-2 text-sm text-slate-600 hover:text-brandNavy">
+          <i class="fa-solid fa-dna text-brandGold w-5"></i> Stem Cell Treatment
+        </a>
+        <a href="/heightincrease.html" class="flex items-center gap-3 py-2 text-sm text-slate-600 hover:text-brandNavy">
+          <i class="fa-solid fa-arrow-up-right-dots text-brandGold w-5"></i> Height Increase
+        </a>
+      </div>
+    </div>
+
+    <a href="/blog.html" class="text-slate-600 py-2 border-b border-slate-50">Blog</a>
+    <a href="/branches.html" class="text-slate-600 py-2 border-b border-slate-50">Branches</a>
+    <a href="/contact.html" class="text-slate-600 py-2 pb-4">Contact</a>
+    
+    <a href="/contact.html" class="sm:hidden block text-center bg-brandNavy text-white px-5 py-3 rounded-full text-xs font-bold uppercase tracking-wider">
+      Consult Now
+    </a>
+  </nav>
+</div>
+</header>
+
+<!-- JavaScript Configuration -->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    // Main Mobile Menu Elements
+    const menuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const menuIcon = menuBtn.querySelector('i');
+
+    // Mobile Sub-menu Elements
+    const mobileServicesBtn = document.getElementById('mobileServicesBtn');
+    const mobileServicesGrid = document.getElementById('mobileServicesGrid');
+    const mobileServicesIcon = document.getElementById('mobileServicesIcon');
+
+    // Helper function to completely close everything
+    const closeMenu = () => {
+      if (!mobileMenu.classList.contains('hidden')) {
+        mobileMenu.classList.add('hidden');
+        menuIcon.classList.replace('fa-xmark', 'fa-bars');
+        
+        // Also reset the internal services sub-menu when main panel closes
+        mobileServicesGrid.classList.add('hidden');
+        mobileServicesIcon.classList.remove('rotate-180');
+      }
+    };
+
+    // Main Hamburger Menu Toggle
+    menuBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isHidden = mobileMenu.classList.toggle('hidden');
+      
+      if (isHidden) {
+        menuIcon.classList.replace('fa-xmark', 'fa-bars');
+        // Reset sub-menu state if panel closes
+        mobileServicesGrid.classList.add('hidden');
+        mobileServicesIcon.classList.remove('rotate-180');
+      } else {
+        menuIcon.classList.replace('fa-bars', 'fa-xmark');
+      }
+    });
+
+    // Mobile Services Accordion Dropdown Toggle
+    mobileServicesBtn.addEventListener('click', (e) => {
+      e.stopPropagation(); // Prevents event bubbling
+      const isSubHidden = mobileServicesGrid.classList.toggle('hidden');
+      
+      // Rotate caret arrow icon smoothly
+      if (isSubHidden) {
+        mobileServicesIcon.classList.remove('rotate-180');
+      } else {
+        mobileServicesIcon.classList.add('rotate-180');
+      }
+    });
+
+    // Close menu when scrolling
+    window.addEventListener('scroll', () => {
+      closeMenu();
+    }, { passive: true });
+
+    // Close menu when clicking outside of it
+    document.addEventListener('click', (e) => {
+      if (!mobileMenu.contains(e.target) && !menuBtn.contains(e.target)) {
+        closeMenu();
+      }
+    });
+  });
+</script>
+
+    <div class="py-4 bg-brandLight px-6 md:px-12 flex items-center gap-3 text-sm font-medium border-b border-slate-200">
+      <a href="index.html" class="text-brandNavy hover:text-brandLime transition-colors">Home</a>
+      <i class="fas fa-chevron-right text-xs text-slate-400"></i>
+      <span class="text-brandLime font-semibold">Services</span>
+      <i class="fas fa-chevron-right text-xs text-slate-400"></i>
+      <span class="text-brandLime font-semibold">Joint Replacement</span>
+    </div>
+
+    <!-- Top Main Hero Banner Section Frame -->
+    <section class="relative bg-brandNavy-deep text-white py-16 px-6 md:py-24 md:px-12 overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#6FD0D4_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            
+            <h1 class="font-serif text-3xl md:text-6xl font-bold max-w-4xl leading-tight">
+                Joint Replacement
+            </h1>
+            <p class="text-base md:text-xl text-brandLight/90 max-w-2xl mt-4 font-medium leading-relaxed">
+                Regain mobility, reduce pain, and restore your active lifestyle with advanced joint replacement surgery.
+            </p>
+        </div>
+    </section>
+
+    <!-- Introductory Summary & Clinic Focus Block Grid -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20 relative overflow-hidden">
+
+
+             <!-- Floating Crystal 1 -->
+    <div class="absolute top-10 left-10 w-28 h-28 bg-gradient-to-br from-white/80 to-cyan-200/30 rounded-[30%] backdrop-blur-xl border border-white/60 shadow-2xl crystal crystal1"></div>
+
+    <!-- Floating Crystal 2 -->
+    <div class="absolute top-24 right-16 w-20 h-20 bg-gradient-to-br from-blue-100/70 to-white/20 rounded-[35%] backdrop-blur-xl border border-white/60 shadow-xl crystal crystal2"></div>
+
+    <!-- Floating Crystal 3 -->
+    <div class="absolute bottom-16 left-1/4 w-24 h-24 bg-gradient-to-br from-cyan-100/70 to-white/20 rounded-[40%] backdrop-blur-xl border border-white/60 shadow-xl crystal crystal3"></div>
+
+    <!-- Floating Crystal 4 -->
+    <div class="absolute bottom-12 right-1/4 w-32 h-32 bg-gradient-to-br from-white/80 to-blue-200/30 rounded-[28%] backdrop-blur-xl border border-white/60 shadow-2xl crystal crystal4"></div>
+
+    <!-- Floating Crystal 5 -->
+    <div class="absolute top-1/2 left-1/2 w-16 h-16 bg-gradient-to-br from-cyan-100/70 to-white/20 rounded-[30%] backdrop-blur-xl border border-white/60 shadow-lg crystal crystal5"></div>
+
+
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start relative z-10">
+
+        <!-- Left Content -->
+        <div class="lg:col-span-2 space-y-6">
+
+            <span class="text-xs uppercase font-extrabold tracking-widest text-luxuryGold block">
+                Best Joint Replacement Surgeon in Powai
+            </span>
+
+            <h2 class="font-serif text-2xl md:text-4xl font-bold text-brandNavy-deep">
+                Precision & Care for Lasting Mobility
+            </h2>
+
+            <p class="text-slate-600 leading-relaxed text-base md:text-lg">
+                Living with chronic joint pain can affect every aspect of your life—from walking and climbing stairs to performing everyday activities comfortably. At Dr. Rahul Rane's Orthopaedic & Spine Care Clinic, we offer advanced joint replacement surgeries designed to relieve pain, restore mobility, and help you return to an active lifestyle.
+            </p>
+
+            <p class="text-slate-600 leading-relaxed">
+                Dr. Rane specializes in knee, hip, and shoulder replacement surgeries, offering both total and partial joint replacement procedures based on your specific condition and lifestyle needs.
+            </p>
+
+            <!-- Quote -->
+            <div class="bg-gradient-to-br from-slate-900 via-brandNavy-deep to-slate-950 text-white rounded-2xl p-6 md:p-8 border-l-8 border-brandGold shadow-lg my-8">
+                <p class="font-serif text-lg md:text-xl italic font-semibold leading-relaxed">
+                    “When medications, physiotherapy, and lifestyle modifications no longer provide relief, joint replacement surgery becomes a safe and highly effective treatment option.”
+                </p>
+            </div>
+
+        </div>
+
+        <!-- Right Sidebar -->
+        <div class="space-y-6">
+
+            <!-- Joint Replacement Image -->
+            <div class="overflow-hidden rounded-2xl shadow-xl group">
+                <img src="/images/joint.png"
+                     alt="Joint Replacement Surgery"
+                     class="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-105">
+            </div>
+
+            <!-- Consultation Card -->
+            <div class="bg-gradient-to-br from-slate-900 to-brandNavy-deep text-white rounded-2xl p-6 md:p-8 shadow-xl relative overflow-hidden">
+
+                <div class="absolute -right-8 -bottom-8 h-32 w-32 bg-brandGold/10 rounded-full blur-xl"></div>
+
+                <span class="text-brandGold font-bold text-xs uppercase tracking-widest block mb-2">
+                    Patient Services Desk
+                </span>
+
+                <h3 class="font-serif text-xl font-bold mb-4">
+                    Expert Assessment
+                </h3>
+
+                <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                    Our experienced orthopaedic team supports you throughout every stage of your treatment—from an accurate diagnosis and personalized treatment plan to successful surgery and recovery.
+                </p>
+
+                <a href="#"
+                   class="flex items-center justify-center gap-2 bg-brandGold hover:bg-brandGold-dark text-brandNavy-deep font-black py-4 px-6 rounded-xl transition-all duration-300 shadow-md text-sm uppercase tracking-wider hover:scale-[1.02]">
+
+                    <span>Schedule Consultation</span>
+
+                    <i class="fa-solid fa-arrow-right transition-transform group-hover:translate-x-1"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+  <!-- Comprehensive Procedures Section -->
+<section class="bg-gradient-to-b from-white to-slate-50 py-16 md:py-24 border-y border-slate-100 relative overflow-hidden">
+
+
+             <!-- Floating Crystal 1 -->
+    <div class="absolute top-10 left-10 w-28 h-28 bg-gradient-to-br from-white/80 to-cyan-200/30 rounded-[30%] backdrop-blur-xl border border-white/60 shadow-2xl crystal crystal1"></div>
+
+    <!-- Floating Crystal 2 -->
+    <div class="absolute top-24 right-16 w-20 h-20 bg-gradient-to-br from-blue-100/70 to-white/20 rounded-[35%] backdrop-blur-xl border border-white/60 shadow-xl crystal crystal2"></div>
+
+    <!-- Floating Crystal 3 -->
+    <div class="absolute bottom-16 left-1/4 w-24 h-24 bg-gradient-to-br from-cyan-100/70 to-white/20 rounded-[40%] backdrop-blur-xl border border-white/60 shadow-xl crystal crystal3"></div>
+
+    <!-- Floating Crystal 4 -->
+    <div class="absolute bottom-12 right-1/4 w-32 h-32 bg-gradient-to-br from-white/80 to-blue-200/30 rounded-[28%] backdrop-blur-xl border border-white/60 shadow-2xl crystal crystal4"></div>
+
+    <!-- Floating Crystal 5 -->
+    <div class="absolute top-1/2 left-1/2 w-16 h-16 bg-gradient-to-br from-cyan-100/70 to-white/20 rounded-[30%] backdrop-blur-xl border border-white/60 shadow-lg crystal crystal5"></div>
+
+
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+
+        <!-- Heading -->
+        <div class="text-center max-w-3xl mx-auto mb-16">
+
+            <span class="text-xs uppercase font-bold tracking-[4px] text-brandGold">
+                PROCEDURES
+            </span>
+
+            <h2 class="mt-3 font-serif text-3xl md:text-5xl font-bold text-brandNavy-deep">
+                Expertise Across Major Joints
+            </h2>
+
+            <div class="w-20 h-1 bg-brandGold rounded-full mx-auto mt-5"></div>
+
+            <p class="mt-6 text-slate-600 leading-relaxed">
+                We provide advanced joint replacement procedures using modern surgical
+                techniques to restore mobility, relieve pain, and improve quality of life.
+            </p>
+
+        </div>
+
+        <!-- Cards -->
+        <div class="grid gap-8 md:grid-cols-2 xl:grid-cols-4">
+
+            <!-- Card 1 -->
+            <div class="group bg-white rounded-3xl p-8 border border-slate-100 shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+
+                <div class="h-16 w-16 rounded-2xl bg-brandGold/10 text-brandGold flex items-center justify-center text-3xl mb-6 group-hover:bg-brandNavy group-hover:text-white transition-all duration-500">
+                    <i class="fa-solid fa-person-walking"></i>
+                </div>
+
+                <h3 class="text-xl font-bold text-brandNavy-deep mb-4">
+                    Knee Replacement
+                </h3>
+
+                <p class="text-slate-600 leading-7">
+                    Total and partial knee replacement procedures for arthritis and joint degeneration, helping restore pain-free movement and improved mobility.
+                </p>
+
+            </div>
+
+            <!-- Card 2 -->
+            <div class="group bg-white rounded-3xl p-8 border border-slate-100 shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+
+                <div class="h-16 w-16 rounded-2xl bg-brandGold/10 text-brandGold flex items-center justify-center text-3xl mb-6 group-hover:bg-brandNavy group-hover:text-white transition-all duration-500">
+                    <i class="fa-solid fa-bone"></i>
+                </div>
+
+                <h3 class="text-xl font-bold text-brandNavy-deep mb-4">
+                    Hip Replacement
+                </h3>
+
+                <p class="text-slate-600 leading-7">
+                    Advanced hip replacement surgery designed to relieve chronic pain, restore joint function, and improve everyday mobility.
+                </p>
+
+            </div>
+
+            <!-- Card 3 -->
+            <div class="group bg-white rounded-3xl p-8 border border-slate-100 shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+
+                <div class="h-16 w-16 rounded-2xl bg-brandGold/10 text-brandGold flex items-center justify-center text-3xl mb-6 group-hover:bg-brandNavy group-hover:text-white transition-all duration-500">
+                    <i class="fa-solid fa-hand"></i>
+                </div>
+
+                <h3 class="text-xl font-bold text-brandNavy-deep mb-4">
+                    Shoulder Replacement
+                </h3>
+
+                <p class="text-slate-600 leading-7">
+                    Total and reverse shoulder replacement procedures for severe arthritis, fractures, and complex rotator cuff disorders.
+                </p>
+
+            </div>
+
+            <!-- Card 4 -->
+            <div class="group bg-white rounded-3xl p-8 border border-slate-100 shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+
+                <div class="h-16 w-16 rounded-2xl bg-brandGold/10 text-brandGold flex items-center justify-center text-3xl mb-6 group-hover:bg-brandNavy group-hover:text-white transition-all duration-500">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                </div>
+
+                <h3 class="text-xl font-bold text-brandNavy-deep mb-4">
+                    Revision Surgery
+                </h3>
+
+                <p class="text-slate-600 leading-7">
+                    Specialized revision joint replacement surgery to replace or repair worn, loose, or failed implants and restore long-term joint function.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- Modern Methodologies Surgical Approach Panel Section Grid -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <span class="text-xs uppercase font-extrabold tracking-widest text-luxuryGold block mb-2">Our Approach</span>
+            <h2 class="font-serif text-3xl md:text-4xl font-bold text-brandNavy-deep">Modern Techniques, Faster Recovery</h2>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- Methodology Detail Block Box Card element 1 -->
+            <div class="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 relative pt-12 overflow-hidden">
+                <span class="absolute top-4 right-6 text-5xl font-black text-brandNavy-light tracking-tighter select-none">01</span>
+                <div class="h-2 w-12 bg-brandNavy mb-4 rounded-full"></div>
+                <h4 class="font-bold text-xl text-brandNavy-deep mb-3">Minimally Invasive Surgery</h4>
+                <p class="text-sm text-slate-600 leading-relaxed">Smaller architectural incisions, reduced overall muscle damage, and less blood loss for quicker recovery and minimal post-surgical discomfort.</p>
+            </div>
+            <!-- Methodology Detail Block Box Card element 2 -->
+            <div class="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 relative pt-12 overflow-hidden">
+                <span class="absolute top-4 right-6 text-5xl font-black text-brandNavy-light tracking-tighter select-none">02</span>
+                <div class="h-2 w-12 bg-brandGold mb-4 rounded-full"></div>
+                <h4 class="font-bold text-xl text-brandNavy-deep mb-3">High-Quality Implants</h4>
+                <p class="text-sm text-slate-600 leading-relaxed">Utilization of premium, highly durable implants tailored meticulously to each patient's distinctive anatomy and routine activity levels.</p>
+            </div>
+            <!-- Methodology Detail Block Box Card element 3 -->
+            <div class="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 relative pt-12 overflow-hidden">
+                <span class="absolute top-4 right-6 text-5xl font-black text-brandNavy-light tracking-tighter select-none">03</span>
+                <div class="h-2 w-12 bg-luxuryGold mb-4 rounded-full"></div>
+                <h4 class="font-bold text-xl text-brandNavy-deep mb-3">Personalized Surgical Plan</h4>
+                <p class="text-sm text-slate-600 leading-relaxed">Every orthopedic procedure is customized based closely on biological age, structural activity factors, and specific individual joint state conditions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recovery, Post-Op Rehabilitation Summary Panel Section Area -->
+    <section class="bg-brandNavy-deep text-white py-16 md:py-20 relative overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center mix-blend-overlay opacity-10" style="background-image: url('https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=1200&auto=format&fit=crop');"></div>
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 space-y-6">
+            <span class="text-xs font-black uppercase tracking-widest text-brandGold block">Recovery &amp; Rehabilitation</span>
+            <h2 class="font-serif text-3xl md:text-4xl font-bold">Comprehensive Care at Every Step</h2>
+            <p class="text-brandLight/80 text-base md:text-lg max-w-3xl mx-auto leading-relaxed">
+                Post-surgery rehabilitation plays a key role in long-term functional success. Our clinic offers highly personalized physiotherapy sessions that help safely restore joint function, improve structural strength, and accelerate your return to target normal activities. We focus intensely on total complete care before, during, and after surgery.
+            </p>
+        </div>
+    </section>
+    
+  <!-- Interaction Hub (Form and Emergency Module) -->
+    <section class="py-20 bg-brandLight border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 flex flex-col lg:flex-row items-center justify-between gap-12">
+            <!-- Booking Mechanism Box -->
+            <form class="border border-brandNavy-light/30 flex py-10 px-8 rounded-3xl flex-col justify-center items-center gap-5 w-full lg:w-[48%] bg-white shadow-xl">
+                <h3 class="text-2xl font-serif font-bold text-brandNavy-deep mb-2 self-start">Request an Appointment</h3>
+                <input required type="text" placeholder="Full Name" class="w-full h-[55px] rounded-xl text-base px-5 text-slate-800 bg-brandLight/50 border border-slate-200 focus:outline-none focus:border-brandNavy transition-colors" />
+                <input required type="email" placeholder="E-mail Address" class="w-full h-[55px] rounded-xl text-base px-5 text-slate-800 bg-brandLight/50 border border-slate-200 focus:outline-none focus:border-brandNavy transition-colors" />
+                <input required type="text" placeholder="Phone Number" class="w-full h-[55px] rounded-xl text-base px-5 text-slate-800 bg-brandLight/50 border border-slate-200 focus:outline-none focus:border-brandNavy transition-colors" />
+                <textarea placeholder="Your Message or Clinical Concern" class="w-full h-[100px] py-3 rounded-xl text-base px-5 text-slate-800 bg-brandLight/50 border border-slate-200 focus:outline-none focus:border-brandNavy transition-colors"></textarea>
+                <button type="submit" class="w-full bg-gradient-to-r from-brandNavy to-brandNavy-dark text-white font-semibold py-4 px-6 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5 cursor-pointer">Submit Application</button>
+            </form>
+            
+            <!-- Quick Alert Panel -->
+            <div class="emergency-card w-full lg:w-[46%] bg-gradient-to-br from-brandNavy-deep to-brandNavy-dark text-white p-8 md:p-12 rounded-3xl shadow-2xl flex flex-col gap-6">
+                <i class="fas fa-ambulance text-accent text-5xl"></i>
+                <h3 class="text-2xl md:text-3xl font-bold font-serif">24/7 Treatment Journey Care</h3>
+                <p class="text-brandLight/80 text-sm leading-relaxed">
+                    Get immediate medical feedback or answer critical questions regarding your alignment progression timelines. 
+                </p>
+                <div class="text-xl md:text-3xl font-bold font-serif text-accent tracking-wide">
+                    <a href="tel:+919833011440" class="hover:underline flex items-center gap-2"><i class="fas fa-phone-alt text-xl"></i> +91 98330 11440</a>
+                </div>
+                <p class="text-xs text-brandNavy-light/80 border-t border-brandNavy/30 pt-4">
+                    We always take care of your mobility — round the clock.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    
+   <footer class="bg-slate-950 text-white pt-20 pb-10 border-t border-slate-900 relative z-10">
+      <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 pb-16 border-b border-white/10">
+        
+      <div class="lg:col-span-4 space-y-6">
+  <!-- Logo -->
+  <img
+    src="/images/sainitstarlogo.jpeg"
+    alt="Sainit Star Logo"
+    class="h-16 w-auto object-contain"
+  >
+
+  <p class="text-slate-400 text-xs leading-relaxed max-w-sm">
+    Orthopaedic surgeon with expertise in joint replacement and spine surgery. Spine surgery using endoscopy. Orthopaedic minimally invasive surgery.
+  </p>
+</div>
+
+        <div class="lg:col-span-2 space-y-4">
+          <h3 class="font-serif text-lg font-semibold text-brandGold">Quick Links</h3>
+          <ul class="space-y-2.5 text-xs text-slate-400 font-medium">
+            <li><a href="/index.html" class="hover:text-brandGold transition-colors">Home</a></li>
+            <li><a href="/about.html" class="hover:text-brandGold transition-colors">About</a></li>
+            <li><a href="/blog.html" class="hover:text-brandGold transition-colors">Blog</a></li>
+            <li><a href="/branches.html" class="hover:text-brandGold transition-colors">Branches</a></li>
+            <li><a href="/contact.html" class="hover:text-brandGold transition-colors">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="lg:col-span-3 space-y-4">
+          <h3 class="font-serif text-lg font-semibold text-brandGold">Our Services</h3>
+          <ul class="space-y-2.5 text-xs text-slate-400 font-medium">
+            <li><a href="/spinesurgery.html" class="hover:text-brandGold transition-colors">Spines Surgery</a></li>
+            <li><a href="/jointReplacdement.html" class="hover:text-brandGold transition-colors">Joint Replacement</a></li>
+            <li><a href="/fracture.html" class="hover:text-brandGold transition-colors">Fracture & Accident</a></li>
+            <li><a href="/Physiotherapy.html" class="hover:text-brandGold transition-colors">Physiotherapy</a></li>
+            <li><a href="/stemtreatment.html" class="hover:text-brandGold transition-colors">Stem Cell Treatment</a></li>
+            <li><a href="/heightIncrease.html" class="hover:text-brandGold transition-colors">Height Increase</a></li>
+          </ul>
+        </div>
+
+        <div class="lg:col-span-3 space-y-4">
+          <h3 class="font-serif text-lg font-semibold text-brandGold">Contact Us</h3>
+          <div class="space-y-3 text-xs text-slate-400 font-medium">
+            <a href="tel:+919833011340" class="flex items-center gap-2 hover:text-brandGold transition-colors"><i class="ri-phone-fill text-brandGold"></i> +91 9833011340</a>
+            <a href="mailto:info@drrahulrane.in" class="flex items-center gap-2 hover:text-brandGold transition-colors"><i class="ri-mail-fill text-brandGold"></i> info@drrahulrane.in</a>
+          </div>
+          <div class="flex gap-3 pt-2">
+            <a href="https://www.linkedin.com/in/dr-rahul-rane/" target="_blank" class="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-300 hover:bg-brandGold hover:text-brandNavy-deep transition-all text-sm"><i class="ri-linkedin-fill"></i></a>
+            <a href="https://www.facebook.com/share/1bnE7VxinB/" target="_blank" class="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-300 hover:bg-brandGold hover:text-brandNavy-deep transition-all text-sm"><i class="ri-facebook-circle-fill"></i></a>
+            <a href="https://www.instagram.com/dr.rahulrane?igsh=MTZqcHlhOTdmcWo2MQ==" target="_blank" class="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-300 hover:bg-brandGold hover:text-brandNavy-deep transition-all text-sm"><i class="ri-instagram-fill"></i></a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="container mx-auto px-6 pt-8 text-center text-[11px] text-slate-500 font-medium tracking-wide">
+        © 2026 Dr. Rahul Rane. All Rights Reserved. Engineered with Luxury Digital Medicine Frameworks.
+      </div>
+    </footer>
+
+    <div class="fixed bottom-8 right-8 z-[999] flex flex-col gap-3">
+      <button id="whatsapp-btn" aria-label="Chat on WhatsApp" class="w-14 h-14 bg-[#25D366] text-white rounded-full flex items-center justify-center text-2xl shadow-xl hover:scale-110 transition-transform">
+        <i class="ri-whatsapp-fill"></i>
+      </button>
+      <a href="#" aria-label="Scroll up" class="w-14 h-14 bg-brandGold text-brandNavy-deep rounded-full flex items-center justify-center text-lg shadow-xl hover:scale-110 transition-transform">
+        <i class="fas fa-arrow-up"></i>
+      </a>
+    </div>
+
+    <!-- Interactive Navigation Control Script Logic Block -->
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        // Main Mobile Navbar Selectors
+        const menuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = menuBtn.querySelector('i');
+
+        // Mobile Services Interactive Nested Elements
+        const mobileServicesBtn = document.getElementById('mobileServicesBtn');
+        const mobileServicesGrid = document.getElementById('mobileServicesGrid');
+        const mobileServicesIcon = document.getElementById('mobileServicesIcon');
+
+        // Reset Menu Control State Helper Method
+        const closeMenu = () => {
+          if (!mobileMenu.classList.contains('hidden')) {
+            mobileMenu.classList.add('hidden');
+            menuIcon.classList.replace('fa-xmark', 'fa-bars');
+            mobileServicesGrid.classList.add('hidden');
+            mobileServicesIcon.classList.remove('rotate-180');
+          }
+        };
+
+        // Click Event listener for Hamburg button module
+        menuBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const isHidden = mobileMenu.classList.toggle('hidden');
+          
+          if (isHidden) {
+            menuIcon.classList.replace('fa-xmark', 'fa-bars');
+            mobileServicesGrid.classList.add('hidden');
+            mobileServicesIcon.classList.remove('rotate-180');
+          } else {
+            menuIcon.classList.replace('fa-bars', 'fa-xmark');
+          }
+        });
+
+        // Click Event listener for secondary layout accordion panel
+        mobileServicesBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const isSubHidden = mobileServicesGrid.classList.toggle('hidden');
+          
+          if (isSubHidden) {
+            mobileServicesIcon.classList.remove('rotate-180');
+          } else {
+            mobileServicesIcon.classList.add('rotate-180');
+          }
+        });
+
+        // Hide toggle window areas dynamically on screen scrolling
+        window.addEventListener('scroll', () => {
+          closeMenu();
+        }, { passive: true });
+
+        // Hide view panel elements completely upon outside canvas click interactions
+        document.addEventListener('click', (e) => {
+          if (!mobileMenu.contains(e.target) && !menuBtn.contains(e.target)) {
+            closeMenu();
+          }
+        });
+      });
+    </script>
+</body>
+</html>
