@@ -135,7 +135,7 @@
         <a href="/spinesurgery.html" class="flex items-center gap-3 py-2 text-sm text-slate-600 hover:text-brandNavy">
           <i class="fa-solid fa-bone text-brandGold w-5"></i> Spine Surgery
         </a>
-        <a href="/jointReplacdement.html" class="flex items-center gap-3 py-2 text-sm text-slate-600 hover:text-brandNavy">
+        <a href="/jointReplacement.html" class="flex items-center gap-3 py-2 text-sm text-slate-600 hover:text-brandNavy">
           <i class="fa-solid fa-wheelchair-move text-brandGold w-5"></i> Joint Replacement
         </a>
         <a href="/Physiotherapy.html" class="flex items-center gap-3 py-2 text-sm text-slate-600 hover:text-brandNavy">
@@ -144,7 +144,7 @@
         <a href="/fracture.html" class="flex items-center gap-3 py-2 text-sm text-slate-600 hover:text-brandNavy">
           <i class="fa-solid fa-truck-medical text-brandGold w-5"></i> Fracture & Accident
         </a>
-        <a href="/stemcell.html" class="flex items-center gap-3 py-2 text-sm text-slate-600 hover:text-brandNavy">
+        <a href="/stemtreatment.html" class="flex items-center gap-3 py-2 text-sm text-slate-600 hover:text-brandNavy">
           <i class="fa-solid fa-dna text-brandGold w-5"></i> Stem Cell Treatment
         </a>
         <a href="/heightincrease.html" class="flex items-center gap-3 py-2 text-sm text-slate-600 hover:text-brandNavy">
@@ -648,71 +648,6 @@
       </a>
     </div>
 
-    <!-- Exact Injected JavaScript Control Logic Module Block provided -->
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        // Main Mobile Menu Elements
-        const menuBtn = document.getElementById('mobileMenuBtn');
-        const mobileMenu = document.getElementById('mobileMenu');
-        const menuIcon = menuBtn.querySelector('i');
-
-        // Mobile Sub-menu Elements
-        const mobileServicesBtn = document.getElementById('mobileServicesBtn');
-        const mobileServicesGrid = document.getElementById('mobileServicesGrid');
-        const mobileServicesIcon = document.getElementById('mobileServicesIcon');
-
-        // Helper function to completely close everything
-        const closeMenu = () => {
-          if (!mobileMenu.classList.contains('hidden')) {
-            mobileMenu.classList.add('hidden');
-            menuIcon.classList.replace('fa-xmark', 'fa-bars');
-            
-            // Also reset the internal services sub-menu when main panel closes
-            mobileServicesGrid.classList.add('hidden');
-            mobileServicesIcon.classList.remove('rotate-180');
-          }
-        };
-
-        // Main Hamburger Menu Toggle
-        menuBtn.addEventListener('click', (e) => {
-          e.stopPropagation();
-          const isHidden = mobileMenu.classList.toggle('hidden');
-          
-          if (isHidden) {
-            menuIcon.classList.replace('fa-xmark', 'fa-bars');
-            // Reset sub-menu state if panel closes
-            mobileServicesGrid.classList.add('hidden');
-            mobileServicesIcon.classList.remove('rotate-180');
-          } else {
-            menuIcon.classList.replace('fa-bars', 'fa-xmark');
-          }
-        });
-
-        // Mobile Services Accordion Dropdown Toggle
-        mobileServicesBtn.addEventListener('click', (e) => {
-          e.stopPropagation(); // Prevents event bubbling
-          const isSubHidden = mobileServicesGrid.classList.toggle('hidden');
-          
-          // Rotate caret arrow icon smoothly
-          if (isSubHidden) {
-            mobileServicesIcon.classList.remove('rotate-180');
-          } else {
-            mobileServicesIcon.classList.add('rotate-180');
-          }
-        });
-
-        // Close menu when scrolling
-        window.addEventListener('scroll', () => {
-          closeMenu();
-        }, { passive: true });
-
-        // Close menu when clicking outside of it
-        document.addEventListener('click', (e) => {
-          if (!mobileMenu.contains(e.target) && !menuBtn.contains(e.target)) {
-            closeMenu();
-          }
-        });
-      });
-    </script>
+   
 </body>
 </html>

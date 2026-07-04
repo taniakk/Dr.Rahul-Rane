@@ -134,7 +134,7 @@
         <a href="/spinesurgery.html" class="flex items-center gap-3 py-2 text-sm text-slate-600 hover:text-brandNavy">
           <i class="fa-solid fa-bone text-brandGold w-5"></i> Spine Surgery
         </a>
-        <a href="/jointReplacdement.html" class="flex items-center gap-3 py-2 text-sm text-slate-600 hover:text-brandNavy">
+        <a href="/jointReplacement.html" class="flex items-center gap-3 py-2 text-sm text-slate-600 hover:text-brandNavy">
           <i class="fa-solid fa-wheelchair-move text-brandGold w-5"></i> Joint Replacement
         </a>
         <a href="/Physiotherapy.html" class="flex items-center gap-3 py-2 text-sm text-slate-600 hover:text-brandNavy">
@@ -143,7 +143,7 @@
         <a href="/fracture.html" class="flex items-center gap-3 py-2 text-sm text-slate-600 hover:text-brandNavy">
           <i class="fa-solid fa-truck-medical text-brandGold w-5"></i> Fracture & Accident
         </a>
-        <a href="/stemcell.html" class="flex items-center gap-3 py-2 text-sm text-slate-600 hover:text-brandNavy">
+        <a href="/stemtreatment.html" class="flex items-center gap-3 py-2 text-sm text-slate-600 hover:text-brandNavy">
           <i class="fa-solid fa-dna text-brandGold w-5"></i> Stem Cell Treatment
         </a>
         <a href="/heightincrease.html" class="flex items-center gap-3 py-2 text-sm text-slate-600 hover:text-brandNavy">
@@ -608,67 +608,6 @@
       </a>
     </div>
 
-    <!-- Interactive Navigation Control Script Logic Block -->
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        // Main Mobile Navbar Selectors
-        const menuBtn = document.getElementById('mobileMenuBtn');
-        const mobileMenu = document.getElementById('mobileMenu');
-        const menuIcon = menuBtn.querySelector('i');
 
-        // Mobile Services Interactive Nested Elements
-        const mobileServicesBtn = document.getElementById('mobileServicesBtn');
-        const mobileServicesGrid = document.getElementById('mobileServicesGrid');
-        const mobileServicesIcon = document.getElementById('mobileServicesIcon');
-
-        // Reset Menu Control State Helper Method
-        const closeMenu = () => {
-          if (!mobileMenu.classList.contains('hidden')) {
-            mobileMenu.classList.add('hidden');
-            menuIcon.classList.replace('fa-xmark', 'fa-bars');
-            mobileServicesGrid.classList.add('hidden');
-            mobileServicesIcon.classList.remove('rotate-180');
-          }
-        };
-
-        // Click Event listener for Hamburg button module
-        menuBtn.addEventListener('click', (e) => {
-          e.stopPropagation();
-          const isHidden = mobileMenu.classList.toggle('hidden');
-          
-          if (isHidden) {
-            menuIcon.classList.replace('fa-xmark', 'fa-bars');
-            mobileServicesGrid.classList.add('hidden');
-            mobileServicesIcon.classList.remove('rotate-180');
-          } else {
-            menuIcon.classList.replace('fa-bars', 'fa-xmark');
-          }
-        });
-
-        // Click Event listener for secondary layout accordion panel
-        mobileServicesBtn.addEventListener('click', (e) => {
-          e.stopPropagation();
-          const isSubHidden = mobileServicesGrid.classList.toggle('hidden');
-          
-          if (isSubHidden) {
-            mobileServicesIcon.classList.remove('rotate-180');
-          } else {
-            mobileServicesIcon.classList.add('rotate-180');
-          }
-        });
-
-        // Hide toggle window areas dynamically on screen scrolling
-        window.addEventListener('scroll', () => {
-          closeMenu();
-        }, { passive: true });
-
-        // Hide view panel elements completely upon outside canvas click interactions
-        document.addEventListener('click', (e) => {
-          if (!mobileMenu.contains(e.target) && !menuBtn.contains(e.target)) {
-            closeMenu();
-          }
-        });
-      });
-    </script>
 </body>
 </html>
