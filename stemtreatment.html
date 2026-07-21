@@ -329,9 +329,23 @@
     <!-- Conditions Treated Section -->
 <section class="bg-gradient-to-b from-white to-slate-50 py-16 md:py-24 border-y border-slate-100 relative overflow-hidden">
 
-    <!-- Floating Crystals -->
-    <div class="absolute top-10 left-10 w-24 h-24 bg-gradient-to-br from-white/80 to-cyan-200/30 rounded-[30%] backdrop-blur-xl border border-white/60 shadow-2xl crystal crystal1"></div>
-    <div class="absolute bottom-10 right-12 w-28 h-28 bg-gradient-to-br from-white/80 to-blue-200/30 rounded-[35%] backdrop-blur-xl border border-white/60 shadow-2xl crystal crystal2"></div>
+    <!-- Floating Background Elements (z-0 layer) -->
+    <div class="absolute inset-0 pointer-events-none z-0">
+        <!-- Floating Crystal 1 -->
+        <div class="absolute top-10 left-10 w-28 h-28 bg-gradient-to-br from-white/80 to-cyan-200/30 rounded-[30%] backdrop-blur-xl border border-white/60 shadow-2xl animate-[float_7s_ease-in-out_infinite]"></div>
+
+        <!-- Floating Crystal 2 -->
+        <div class="absolute top-24 right-16 w-20 h-20 bg-gradient-to-br from-blue-100/70 to-white/20 rounded-[35%] backdrop-blur-xl border border-white/60 shadow-xl animate-[float_5s_ease-in-out_1s_infinite]"></div>
+
+        <!-- Floating Crystal 3 -->
+        <div class="absolute bottom-16 left-1/4 w-24 h-24 bg-gradient-to-br from-cyan-100/70 to-white/20 rounded-[40%] backdrop-blur-xl border border-white/60 shadow-xl animate-[float_8s_ease-in-out_2s_infinite]"></div>
+
+        <!-- Floating Crystal 4 -->
+        <div class="absolute bottom-12 right-12 w-28 h-28 bg-gradient-to-br from-white/80 to-blue-200/30 rounded-[35%] backdrop-blur-xl border border-white/60 shadow-2xl animate-[float_6s_ease-in-out_0.5s_infinite]"></div>
+
+        <!-- Floating Crystal 5 -->
+        <div class="absolute top-1/2 left-1/2 w-16 h-16 bg-gradient-to-br from-cyan-100/70 to-white/20 rounded-[30%] backdrop-blur-xl border border-white/60 shadow-lg animate-[float_9s_ease-in-out_1.5s_infinite]"></div>
+    </div>
 
     <div class="max-w-7xl mx-auto px-6 relative z-10">
 
@@ -357,7 +371,7 @@
 
             <!-- Card 1: Osteoarthritis -->
             <div class="group bg-white rounded-3xl p-8 border border-slate-100 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500">
-                <!-- Icon: fa-bone perfectly represents skeletal joints and bone integrity -->
+                <!-- Icon: fa-bone represents skeletal joints and bone integrity -->
                 <div class="w-16 h-16 rounded-2xl bg-brandGold/10 text-brandGold flex items-center justify-center text-3xl mb-6 group-hover:bg-brandNavy group-hover:text-white transition-all duration-500">
                     <i class="fa-solid fa-bone"></i>
                 </div>
@@ -381,7 +395,7 @@
 
             <!-- Card 3: Cartilage Degeneration -->
             <div class="group bg-white rounded-3xl p-8 border border-slate-100 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500">
-                <!-- Icon: fa-shield-halved represents cushioning, protective layers, and joint defense -->
+                <!-- Icon: fa-shield-halved represents cushioning and protective layers -->
                 <div class="w-16 h-16 rounded-2xl bg-brandGold/10 text-brandGold flex items-center justify-center text-3xl mb-6 group-hover:bg-brandNavy group-hover:text-white transition-all duration-500">
                     <i class="fa-solid fa-shield-halved"></i>
                 </div>
@@ -393,7 +407,7 @@
 
             <!-- Card 4: Ligament Injuries -->
             <div class="group bg-white rounded-3xl p-8 border border-slate-100 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500">
-                <!-- Icon: fa-person-running represents joint stabilization during athletic movement -->
+                <!-- Icon: fa-person-running represents joint stabilization during movement -->
                 <div class="w-16 h-16 rounded-2xl bg-brandGold/10 text-brandGold flex items-center justify-center text-3xl mb-6 group-hover:bg-brandNavy group-hover:text-white transition-all duration-500">
                     <i class="fa-solid fa-person-running"></i>
                 </div>
@@ -405,7 +419,7 @@
 
             <!-- Card 5: Muscle Tears -->
             <div class="group bg-white rounded-3xl p-8 border border-slate-100 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500">
-                <!-- Icon: fa-child represents physical soft tissue, muscle groups, and physical body recovery -->
+                <!-- Icon: fa-child represents physical soft tissue and recovery -->
                 <div class="w-16 h-16 rounded-2xl bg-brandGold/10 text-brandGold flex items-center justify-center text-3xl mb-6 group-hover:bg-brandNavy group-hover:text-white transition-all duration-500">
                     <i class="fa-solid fa-child"></i>
                 </div>
@@ -417,7 +431,7 @@
 
             <!-- Card 6: Spinal Conditions -->
             <div class="group bg-white rounded-3xl p-8 border border-slate-100 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500">
-                <!-- Icon: fa-align-center beautifully mirrors a stacked vertebral column alignment -->
+                <!-- Icon: fa-align-center represents stacked vertebral alignment -->
                 <div class="w-16 h-16 rounded-2xl bg-brandGold/10 text-brandGold flex items-center justify-center text-3xl mb-6 group-hover:bg-brandNavy group-hover:text-white transition-all duration-500">
                     <i class="fa-solid fa-align-center"></i>
                 </div>
@@ -430,6 +444,14 @@
         </div>
     </div>
 </section>
+
+<!-- Embedded Floating Keyframes Animation -->
+<style>
+  @keyframes float {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-18px) rotate(6deg); }
+  }
+</style>
 
     <!-- Why Choose Stem Cell Therapy Section -->
   <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
@@ -514,28 +536,30 @@
 </section>
 
     <!-- Our Process Section -->
-   <section class="bg-gradient-to-br from-slate-50 via-white to-blue-50 py-20 overflow-hidden relative">
+  <section class="bg-gradient-to-br from-slate-50 via-white to-blue-50 py-20 overflow-hidden relative">
 
+    <!-- Floating Background Elements (z-0 layer) -->
+    <div class="absolute inset-0 pointer-events-none z-0">
+        <!-- Floating Crystal 1 -->
+        <div class="absolute top-10 left-10 w-28 h-28 bg-gradient-to-br from-white/80 to-cyan-200/30 rounded-[30%] backdrop-blur-xl border border-white/60 shadow-2xl animate-[float_7s_ease-in-out_infinite]"></div>
 
-             <!-- Floating Crystal 1 -->
-    <div class="absolute top-10 left-10 w-28 h-28 bg-gradient-to-br from-white/80 to-cyan-200/30 rounded-[30%] backdrop-blur-xl border border-white/60 shadow-2xl crystal crystal1"></div>
+        <!-- Floating Crystal 2 -->
+        <div class="absolute top-24 right-16 w-20 h-20 bg-gradient-to-br from-blue-100/70 to-white/20 rounded-[35%] backdrop-blur-xl border border-white/60 shadow-xl animate-[float_5s_ease-in-out_1s_infinite]"></div>
 
-    <!-- Floating Crystal 2 -->
-    <div class="absolute top-24 right-16 w-20 h-20 bg-gradient-to-br from-blue-100/70 to-white/20 rounded-[35%] backdrop-blur-xl border border-white/60 shadow-xl crystal crystal2"></div>
+        <!-- Floating Crystal 3 -->
+        <div class="absolute bottom-16 left-1/4 w-24 h-24 bg-gradient-to-br from-cyan-100/70 to-white/20 rounded-[40%] backdrop-blur-xl border border-white/60 shadow-xl animate-[float_8s_ease-in-out_2s_infinite]"></div>
 
-    <!-- Floating Crystal 3 -->
-    <div class="absolute bottom-16 left-1/4 w-24 h-24 bg-gradient-to-br from-cyan-100/70 to-white/20 rounded-[40%] backdrop-blur-xl border border-white/60 shadow-xl crystal crystal3"></div>
+        <!-- Floating Crystal 4 -->
+        <div class="absolute bottom-12 right-1/4 w-32 h-32 bg-gradient-to-br from-white/80 to-blue-200/30 rounded-[28%] backdrop-blur-xl border border-white/60 shadow-2xl animate-[float_6s_ease-in-out_0.5s_infinite]"></div>
 
-    <!-- Floating Crystal 4 -->
-    <div class="absolute bottom-12 right-1/4 w-32 h-32 bg-gradient-to-br from-white/80 to-blue-200/30 rounded-[28%] backdrop-blur-xl border border-white/60 shadow-2xl crystal crystal4"></div>
+        <!-- Floating Crystal 5 -->
+        <div class="absolute top-1/2 left-1/2 w-16 h-16 bg-gradient-to-br from-cyan-100/70 to-white/20 rounded-[30%] backdrop-blur-xl border border-white/60 shadow-lg animate-[float_9s_ease-in-out_1.5s_infinite]"></div>
+    </div>
 
-    <!-- Floating Crystal 5 -->
-    <div class="absolute top-1/2 left-1/2 w-16 h-16 bg-gradient-to-br from-cyan-100/70 to-white/20 rounded-[30%] backdrop-blur-xl border border-white/60 shadow-lg crystal crystal5"></div>
-
-    <div class="max-w-7xl mx-auto px-6">
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
 
         <!-- Heading -->
-        <div class="text-center max-w-3xl mx-auto mb-20 relative z-[9999]">
+        <div class="text-center max-w-3xl mx-auto mb-20">
 
             <span class="text-brandGold uppercase tracking-[4px] text-xs font-bold">
                 OUR PROCESS
@@ -669,6 +693,14 @@
     </div>
 
 </section>
+
+<!-- Embedded Floating Keyframes Animation -->
+<style>
+  @keyframes float {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-18px) rotate(6deg); }
+  }
+</style>
 
   <!-- Interaction Hub (Form and Emergency Module) -->
     <section class="py-20 bg-brandLight border-t border-slate-100">

@@ -254,28 +254,28 @@
  <!-- Introductory Summary & Clinic Focus Block -->
 <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20 relative overflow-hidden">
 
-          <!-- Floating Crystal 1 -->
-    <div class="absolute top-10 left-10 w-28 h-28 bg-gradient-to-br from-white/80 to-cyan-200/30 rounded-[30%] backdrop-blur-xl border border-white/60 shadow-2xl crystal crystal1"></div>
+    <!-- Floating Background Elements (z-0 layer) -->
+    <div class="absolute inset-0 pointer-events-none z-0">
+        <!-- Floating Crystal 1 -->
+        <div class="absolute top-10 left-10 w-28 h-28 bg-gradient-to-br from-white/80 to-cyan-200/30 rounded-[30%] backdrop-blur-xl border border-white/60 shadow-2xl animate-[float_7s_ease-in-out_infinite]"></div>
 
-    <!-- Floating Crystal 2 -->
-    <div class="absolute top-24 right-16 w-20 h-20 bg-gradient-to-br from-blue-100/70 to-white/20 rounded-[35%] backdrop-blur-xl border border-white/60 shadow-xl crystal crystal2"></div>
+        <!-- Floating Crystal 2 -->
+        <div class="absolute top-24 right-16 w-20 h-20 bg-gradient-to-br from-blue-100/70 to-white/20 rounded-[35%] backdrop-blur-xl border border-white/60 shadow-xl animate-[float_5s_ease-in-out_1s_infinite]"></div>
 
-    <!-- Floating Crystal 3 -->
-    <div class="absolute bottom-16 left-1/4 w-24 h-24 bg-gradient-to-br from-cyan-100/70 to-white/20 rounded-[40%] backdrop-blur-xl border border-white/60 shadow-xl crystal crystal3"></div>
+        <!-- Floating Crystal 3 -->
+        <div class="absolute bottom-16 left-1/4 w-24 h-24 bg-gradient-to-br from-cyan-100/70 to-white/20 rounded-[40%] backdrop-blur-xl border border-white/60 shadow-xl animate-[float_8s_ease-in-out_2s_infinite]"></div>
 
-    <!-- Floating Crystal 4 -->
-    <div class="absolute bottom-12 right-1/4 w-32 h-32 bg-gradient-to-br from-white/80 to-blue-200/30 rounded-[28%] backdrop-blur-xl border border-white/60 shadow-2xl crystal crystal4"></div>
+        <!-- Floating Crystal 4 -->
+        <div class="absolute bottom-12 right-1/4 w-32 h-32 bg-gradient-to-br from-white/80 to-blue-200/30 rounded-[28%] backdrop-blur-xl border border-white/60 shadow-2xl animate-[float_6s_ease-in-out_0.5s_infinite]"></div>
 
-    <!-- Floating Crystal 5 -->
-    <div class="absolute top-1/2 left-1/2 w-16 h-16 bg-gradient-to-br from-cyan-100/70 to-white/20 rounded-[30%] backdrop-blur-xl border border-white/60 shadow-lg crystal crystal5"></div>
+        <!-- Floating Crystal 5 -->
+        <div class="absolute top-1/2 left-1/2 w-16 h-16 bg-gradient-to-br from-cyan-100/70 to-white/20 rounded-[30%] backdrop-blur-xl border border-white/60 shadow-lg animate-[float_9s_ease-in-out_1.5s_infinite]"></div>
+    </div>
 
-
-
-
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start relative z-10">
 
         <!-- Left Content -->
-        <div class="lg:col-span-2 space-y-6 z-[9999]">
+        <div class="lg:col-span-2 space-y-6">
 
             <span class="text-xs uppercase font-extrabold tracking-widest text-luxuryGold block">
                 Dedicated to Your Health
@@ -330,7 +330,7 @@
                 </p>
 
                 <a href="/contact.html"
-                   class="flex items-center justify-center gap-2 bg-brandGold hover:bg-brandGold-dark text-brandNavy-deep font-black py-4 px-6 rounded-xl transition-all duration-300 shadow-md text-sm uppercase tracking-wider hover:scale-[1.02]">
+                   class="flex items-center justify-center gap-2 bg-brandGold hover:bg-brandGold-dark text-brandNavy-deep font-black py-4 px-6 rounded-xl transition-all duration-300 shadow-md text-sm uppercase tracking-wider hover:scale-[1.02] group">
 
                     <span>Schedule a Session</span>
 
@@ -345,23 +345,34 @@
     </div>
 </section>
 
+<!-- Embedded Floating Keyframes Animation -->
+<style>
+  @keyframes float {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-18px) rotate(6deg); }
+  }
+</style>
+
   <!-- Conditions We Treat -->
 <section class="bg-white border-y border-slate-100 py-16 md:py-24 relative overflow-hidden">
 
-    <!-- Floating Crystal 1 -->
-    <div class="absolute top-10 left-10 w-28 h-28 bg-gradient-to-br from-white/80 to-cyan-200/30 rounded-[30%] backdrop-blur-xl border border-white/60 shadow-2xl crystal crystal1"></div>
+    <!-- Floating Background Elements (z-0 layer) -->
+    <div class="absolute inset-0 pointer-events-none z-0">
+        <!-- Floating Crystal 1 -->
+        <div class="absolute top-10 left-10 w-28 h-28 bg-gradient-to-br from-white/80 to-cyan-200/30 rounded-[30%] backdrop-blur-xl border border-white/60 shadow-2xl animate-[float_7s_ease-in-out_infinite]"></div>
 
-    <!-- Floating Crystal 2 -->
-    <div class="absolute top-24 right-16 w-20 h-20 bg-gradient-to-br from-blue-100/70 to-white/20 rounded-[35%] backdrop-blur-xl border border-white/60 shadow-xl crystal crystal2"></div>
+        <!-- Floating Crystal 2 -->
+        <div class="absolute top-24 right-16 w-20 h-20 bg-gradient-to-br from-blue-100/70 to-white/20 rounded-[35%] backdrop-blur-xl border border-white/60 shadow-xl animate-[float_5s_ease-in-out_1s_infinite]"></div>
 
-    <!-- Floating Crystal 3 -->
-    <div class="absolute bottom-16 left-1/4 w-24 h-24 bg-gradient-to-br from-cyan-100/70 to-white/20 rounded-[40%] backdrop-blur-xl border border-white/60 shadow-xl crystal crystal3"></div>
+        <!-- Floating Crystal 3 -->
+        <div class="absolute bottom-16 left-1/4 w-24 h-24 bg-gradient-to-br from-cyan-100/70 to-white/20 rounded-[40%] backdrop-blur-xl border border-white/60 shadow-xl animate-[float_8s_ease-in-out_2s_infinite]"></div>
 
-    <!-- Floating Crystal 4 -->
-    <div class="absolute bottom-12 right-1/4 w-32 h-32 bg-gradient-to-br from-white/80 to-blue-200/30 rounded-[28%] backdrop-blur-xl border border-white/60 shadow-2xl crystal crystal4"></div>
+        <!-- Floating Crystal 4 -->
+        <div class="absolute bottom-12 right-1/4 w-32 h-32 bg-gradient-to-br from-white/80 to-blue-200/30 rounded-[28%] backdrop-blur-xl border border-white/60 shadow-2xl animate-[float_6s_ease-in-out_0.5s_infinite]"></div>
 
-    <!-- Floating Crystal 5 -->
-    <div class="absolute top-1/2 left-1/2 w-16 h-16 bg-gradient-to-br from-cyan-100/70 to-white/20 rounded-[30%] backdrop-blur-xl border border-white/60 shadow-lg crystal crystal5"></div>
+        <!-- Floating Crystal 5 -->
+        <div class="absolute top-1/2 left-1/2 w-16 h-16 bg-gradient-to-br from-cyan-100/70 to-white/20 rounded-[30%] backdrop-blur-xl border border-white/60 shadow-lg animate-[float_9s_ease-in-out_1.5s_infinite]"></div>
+    </div>
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
@@ -501,6 +512,14 @@
     </div>
 
 </section>
+
+<!-- Embedded Floating Keyframes Animation -->
+<style>
+  @keyframes float {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-18px) rotate(6deg); }
+  }
+</style>
 
     <!-- Modern Methodologies Techniques Section Grid -->
     <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">

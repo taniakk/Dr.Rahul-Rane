@@ -250,43 +250,58 @@
   </section>
 
   <!-- INTRODUCTION -->
-  <section class="py-16 bg-white shadow-sm relative">
-    
-    <!-- Floating Crystal 1 -->
-    <div class="absolute hidden md:block top-10 left-10 w-28 h-28 bg-gradient-to-br from-white/80 to-cyan-200/30 rounded-[30%] backdrop-blur-xl border border-white/60 shadow-2xl crystal crystal1"></div>
+<section class="py-16 bg-white shadow-sm relative overflow-hidden">
 
-    <!-- Floating Crystal 2 -->
-    <div class="absolute hidden md:block top-24 right-16 w-20 h-20 bg-gradient-to-br from-blue-100/70 to-white/20 rounded-[35%] backdrop-blur-xl border border-white/60 shadow-xl crystal crystal2"></div>
+    <!-- Floating Background Elements (z-0 layer) -->
+    <div class="absolute inset-0 pointer-events-none z-0 hidden md:block">
+        <!-- Floating Crystal 1 -->
+        <div class="absolute top-10 left-10 w-28 h-28 bg-gradient-to-br from-white/80 to-cyan-200/30 rounded-[30%] backdrop-blur-xl border border-white/60 shadow-2xl animate-[float_7s_ease-in-out_infinite]"></div>
 
-    <!-- Floating Crystal 3 -->
-    <div class="absolute hidden md:block bottom-16 left-1/4 w-24 h-24 bg-gradient-to-br from-cyan-100/70 to-white/20 rounded-[40%] backdrop-blur-xl border border-white/60 shadow-xl crystal crystal3"></div>
+        <!-- Floating Crystal 2 -->
+        <div class="absolute top-24 right-16 w-20 h-20 bg-gradient-to-br from-blue-100/70 to-white/20 rounded-[35%] backdrop-blur-xl border border-white/60 shadow-xl animate-[float_5s_ease-in-out_1s_infinite]"></div>
 
-    <!-- Floating Crystal 4 -->
-    <div class="absolute hidden md:block bottom-12 right-1/4 w-32 h-32 bg-gradient-to-br from-white/80 to-blue-200/30 rounded-[28%] backdrop-blur-xl border border-white/60 shadow-2xl crystal crystal4"></div>
+        <!-- Floating Crystal 3 -->
+        <div class="absolute bottom-16 left-1/4 w-24 h-24 bg-gradient-to-br from-cyan-100/70 to-white/20 rounded-[40%] backdrop-blur-xl border border-white/60 shadow-xl animate-[float_8s_ease-in-out_2s_infinite]"></div>
 
-    <!-- Floating Crystal 5 -->
-    <div class="absolute hidden md:block top-1/2 left-1/2 w-16 h-16 bg-gradient-to-br from-cyan-100/70 to-white/20 rounded-[30%] backdrop-blur-xl border border-white/60 shadow-lg crystal crystal5"></div>
-    <div class="container mx-auto max-w-5xl px-6 md:px-8 space-y-6 text-base md:text-lg text-slate-600 leading-relaxed ">
-      <p class="animate-fade-up z-[9999]">
-        At Dr. Rahul Rane’s Orthopaedic & Spine Care Clinic, our mission is to
-        make high-quality orthopedic care easily accessible to patients across
-        Mumbai. With multiple branches spread throughout the city, we offer
-        expert consultation, diagnosis, and treatment at your convenience. Our
-        network is recognized among the
-        <strong class="text-brandNavy font-semibold border-b-2 border-brandNavy/40">Best Orthopedic Clinics In Mumbai</strong> for its commitment
-        to advanced care and consistent patient satisfaction.
-      </p>
-      <p class="animate-fade-up delay-1 z-[9999] relative">
-        We currently operate from several key locations, including Powai,
-        Andheri East, Andheri West, Vile Parle, Chembur, and more. Dr. Rane is
-        affiliated with top hospitals such as Hiranandani Hospital, Nanavati
-        Max, Hinduja Healthcare, Criticare Hospital, Raksha Hospital, and
-        Seven Hills Hospital. Each branch provides a full range of
-        services—from consultation and diagnostics to surgery and
-        post-treatment rehabilitation.
-      </p>
+        <!-- Floating Crystal 4 -->
+        <div class="absolute bottom-12 right-1/4 w-32 h-32 bg-gradient-to-br from-white/80 to-blue-200/30 rounded-[28%] backdrop-blur-xl border border-white/60 shadow-2xl animate-[float_6s_ease-in-out_0.5s_infinite]"></div>
+
+        <!-- Floating Crystal 5 -->
+        <div class="absolute top-1/2 left-1/2 w-16 h-16 bg-gradient-to-br from-cyan-100/70 to-white/20 rounded-[30%] backdrop-blur-xl border border-white/60 shadow-lg animate-[float_9s_ease-in-out_1.5s_infinite]"></div>
     </div>
-  </section>
+
+    <!-- Content Container -->
+    <div class="container mx-auto max-w-5xl px-6 md:px-8 space-y-6 text-base md:text-lg text-slate-600 leading-relaxed relative z-10">
+        <p class="animate-fade-up">
+            At Dr. Rahul Rane’s Orthopaedic & Spine Care Clinic, our mission is to
+            make high-quality orthopedic care easily accessible to patients across
+            Mumbai. With multiple branches spread throughout the city, we offer
+            expert consultation, diagnosis, and treatment at your convenience. Our
+            network is recognized among the
+            <strong class="text-brandNavy font-semibold border-b-2 border-brandNavy/40">Best Orthopedic Clinics In Mumbai</strong> for its commitment
+            to advanced care and consistent patient satisfaction.
+        </p>
+
+        <p class="animate-fade-up delay-1">
+            We currently operate from several key locations, including Powai,
+            Andheri East, Andheri West, Vile Parle, Chembur, and more. Dr. Rane is
+            affiliated with top hospitals such as Hiranandani Hospital, Nanavati
+            Max, Hinduja Healthcare, Criticare Hospital, Raksha Hospital, and
+            Seven Hills Hospital. Each branch provides a full range of
+            services—from consultation and diagnostics to surgery and
+            post-treatment rehabilitation.
+        </p>
+    </div>
+
+</section>
+
+<!-- Embedded Floating Keyframes Animation -->
+<style>
+  @keyframes float {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-18px) rotate(6deg); }
+  }
+</style>
 
   <!-- BRANCHES GRID -->
   <section class="py-20 bg-slate-50">

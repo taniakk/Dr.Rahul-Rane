@@ -270,233 +270,203 @@
   </section>
 
   <!-- Main Content: Articles & Sidebar -->
-  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20 relative z-10">
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20 relative overflow-hidden">
 
-             <!-- Floating Crystal 1 -->
-    <div class="absolute top-10 left-10 w-28 h-28 bg-gradient-to-br from-white/80 to-cyan-200/30 rounded-[30%] backdrop-blur-xl border border-white/60 shadow-2xl crystal crystal1"></div>
+    <!-- Floating Background Elements (z-0 layer) -->
+    <div class="absolute inset-0 pointer-events-none z-0">
+        <!-- Floating Crystal 1 -->
+        <div class="absolute top-10 left-10 w-28 h-28 bg-gradient-to-br from-white/80 to-cyan-200/30 rounded-[30%] backdrop-blur-xl border border-white/60 shadow-2xl animate-[float_7s_ease-in-out_infinite]"></div>
 
-    <!-- Floating Crystal 2 -->
-    <div class="absolute top-24 right-16 w-20 h-20 bg-gradient-to-br from-blue-100/70 to-white/20 rounded-[35%] backdrop-blur-xl border border-white/60 shadow-xl crystal crystal2"></div>
+        <!-- Floating Crystal 2 -->
+        <div class="absolute top-24 right-16 w-20 h-20 bg-gradient-to-br from-blue-100/70 to-white/20 rounded-[35%] backdrop-blur-xl border border-white/60 shadow-xl animate-[float_5s_ease-in-out_1s_infinite]"></div>
 
-    <!-- Floating Crystal 3 -->
-    <div class="absolute bottom-16 left-1/4 w-24 h-24 bg-gradient-to-br from-cyan-100/70 to-white/20 rounded-[40%] backdrop-blur-xl border border-white/60 shadow-xl crystal crystal3"></div>
+        <!-- Floating Crystal 3 -->
+        <div class="absolute bottom-16 left-1/4 w-24 h-24 bg-gradient-to-br from-cyan-100/70 to-white/20 rounded-[40%] backdrop-blur-xl border border-white/60 shadow-xl animate-[float_8s_ease-in-out_2s_infinite]"></div>
 
-    <!-- Floating Crystal 4 -->
-    <div class="absolute bottom-12 right-1/4 w-32 h-32 bg-gradient-to-br from-white/80 to-blue-200/30 rounded-[28%] backdrop-blur-xl border border-white/60 shadow-2xl crystal crystal4"></div>
+        <!-- Floating Crystal 4 -->
+        <div class="absolute bottom-12 right-1/4 w-32 h-32 bg-gradient-to-br from-white/80 to-blue-200/30 rounded-[28%] backdrop-blur-xl border border-white/60 shadow-2xl animate-[float_6s_ease-in-out_0.5s_infinite]"></div>
 
-    <!-- Floating Crystal 5 -->
-    <div class="absolute top-1/2 left-1/2 w-16 h-16 bg-gradient-to-br from-cyan-100/70 to-white/20 rounded-[30%] backdrop-blur-xl border border-white/60 shadow-lg crystal crystal5"></div>
+        <!-- Floating Crystal 5 -->
+        <div class="absolute top-1/2 left-1/2 w-16 h-16 bg-gradient-to-br from-cyan-100/70 to-white/20 rounded-[30%] backdrop-blur-xl border border-white/60 shadow-lg animate-[float_9s_ease-in-out_1.5s_infinite]"></div>
+    </div>
 
+    <!-- Main Content Layout Container -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 items-start relative z-10 pt-8">
 
+        <!-- Latest Articles Column -->
+        <div class="lg:col-span-2 space-y-8">
 
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 items-start relative z-[9999]">
+            <div class="flex items-center gap-3 border-b-2 border-slate-100 pb-4">
+                <h3 class="text-2xl font-black text-brandNavy tracking-tight">Latest Articles</h3>
+                <span class="h-2 w-2 rounded-full bg-brandLime"></span>
+            </div>
 
-      <!-- Latest Articles Column -->
-      <div class="lg:col-span-2 space-y-8">
+            <!-- Article 1 -->
+            <article class="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 overflow-hidden group">
+                <div class="grid md:grid-cols-3">
 
-        
+                    <!-- Image -->
+                    <div class="overflow-hidden">
+                        <img src="https://ik.imagekit.io/iuiy6mihw/Dr.Blog3.jpg" alt="Future of Joint Replacement Surgery" class="w-full h-64 md:h-full object-cover object-[15%_center] transition-transform duration-500 group-hover:scale-105" />
+                    </div>
 
+                    <!-- Content -->
+                    <div class="md:col-span-2 p-6 md:p-8">
+                        <div class="flex flex-wrap items-center gap-4 text-xs font-semibold uppercase tracking-wider text-slate-400 mb-4">
+                            <span class="flex items-center gap-1.5 bg-slate-100 px-2.5 py-1 rounded text-slate-600">
+                                <span class="h-1.5 w-1.5 rounded-full bg-brandLime"></span>
+                                Dr. Rane
+                            </span>
+                            <span>•</span>
+                            <span>March 15, 2026</span>
+                            <span>•</span>
+                            <span class="text-brandBlue font-bold">Technology</span>
+                        </div>
 
+                        <h4 class="text-xl md:text-2xl font-bold text-slate-900 group-hover:text-brandBlue transition-colors mb-3">
+                            The Future of Joint Replacement Surgery: Advances in Technology & Techniques
+                        </h4>
 
-        <div class="flex items-center gap-3 border-b-2 border-slate-100 pb-4">
-          <h3 class="text-2xl font-black text-brandNavy tracking-tight">Latest Articles</h3>
-          <span class="h-2 w-2 rounded-full bg-brandLime"></span>
+                        <p class="text-slate-600 leading-relaxed mb-6">
+                            Exploring how robotics, 3D printing, and new implant materials are transforming joint replacement outcomes and accelerating recovery times.
+                        </p>
+
+                        <a href="blog1.html" class="inline-flex items-center gap-2 text-brandBlue font-bold hover:text-brandBlue-dark">
+                            Read Full Article
+                            <span class="text-brandLime transition-transform group-hover:translate-x-1">→</span>
+                        </a>
+                    </div>
+
+                </div>
+            </article>
+
+            <!-- Article 2 -->
+            <article class="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 overflow-hidden group">
+                <div class="grid md:grid-cols-3">
+
+                    <!-- Image -->
+                    <div class="overflow-hidden">
+                        <img src="https://ik.imagekit.io/iuiy6mihw/Dr.blog2.jpg" alt="Preventing Sports Injuries" class="w-full h-64 md:h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                    </div>
+
+                    <!-- Content -->
+                    <div class="md:col-span-2 p-6 md:p-8">
+                        <div class="flex flex-wrap items-center gap-4 text-xs font-semibold uppercase tracking-wider text-slate-400 mb-4">
+                            <span class="flex items-center gap-1.5 bg-slate-100 px-2.5 py-1 rounded text-slate-600">
+                                <span class="h-1.5 w-1.5 rounded-full bg-brandLime"></span>
+                                Dr. Rane
+                            </span>
+                            <span>•</span>
+                            <span>February 28, 2026</span>
+                            <span>•</span>
+                            <span class="text-brandBlue font-bold">Prevention</span>
+                        </div>
+
+                        <h4 class="text-xl md:text-2xl font-bold text-slate-900 group-hover:text-brandBlue transition-colors mb-3">
+                            Preventing Sports Injuries: Tips from an Orthopaedic Expert
+                        </h4>
+
+                        <p class="text-slate-600 leading-relaxed mb-6">
+                            Sports and physical activity are essential for a healthy lifestyle, but they also come with a risk of injury. Learn the essential strategies to protect your joints and stay active safely...
+                        </p>
+
+                        <a href="/blog2.html" class="inline-flex items-center gap-2 text-brandBlue font-bold hover:text-brandBlue-dark">
+                            Read Full Article
+                            <span class="text-brandLime transition-transform group-hover:translate-x-1">→</span>
+                        </a>
+                    </div>
+
+                </div>
+            </article>
+
+            <!-- Article 3 -->
+            <article class="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 overflow-hidden group">
+                <div class="grid md:grid-cols-3">
+
+                    <!-- Image -->
+                    <div class="overflow-hidden">
+                        <img src="https://ik.imagekit.io/iuiy6mihw/blog1.jpg" alt="Understanding Joint Pain" class="w-full h-64 md:h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                    </div>
+
+                    <!-- Content -->
+                    <div class="md:col-span-2 p-6 md:p-8">
+                        <div class="flex flex-wrap items-center gap-4 text-xs font-semibold uppercase tracking-wider text-slate-400 mb-4">
+                            <span class="flex items-center gap-1.5 bg-slate-100 px-2.5 py-1 rounded text-slate-600">
+                                <span class="h-1.5 w-1.5 rounded-full bg-brandLime"></span>
+                                Dr. Rane
+                            </span>
+                            <span>•</span>
+                            <span>January 12, 2026</span>
+                            <span>•</span>
+                            <span class="text-brandBlue font-bold">Education</span>
+                        </div>
+
+                        <h4 class="text-xl md:text-2xl font-bold text-slate-900 group-hover:text-brandBlue transition-colors mb-3">
+                            Understanding Joint Pain: Causes, Diagnosis & Treatment Options
+                        </h4>
+
+                        <p class="text-slate-600 leading-relaxed mb-6">
+                            Joint pain can stem from various conditions like arthritis, sudden injury, or chronic overuse. Learn how to accurately identify the cause and explore your dynamic treatment paths...
+                        </p>
+
+                        <a href="/blog3.html" class="inline-flex items-center gap-2 text-brandBlue font-bold hover:text-brandBlue-dark">
+                            Read Full Article
+                            <span class="text-brandLime transition-transform group-hover:translate-x-1">→</span>
+                        </a>
+                    </div>
+
+                </div>
+            </article>
+
         </div>
 
-        <article
-          class="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 overflow-hidden group">
-          <div class="grid md:grid-cols-3">
+        <!-- Sidebar -->
+        <aside class="space-y-8 lg:mt-12">
 
-            <!-- Image -->
-            <div class="overflow-hidden">
-              <img src="https://ik.imagekit.io/iuiy6mihw/Dr.Blog3.jpg"
-                class="w-full h-64 md:h-full object-cover object-[15%_center] transition-transform duration-500 group-hover:scale-105">
+            <!-- Why Read Our Blog Card -->
+            <div class="bg-gradient-to-br from-slate-900 to-slate-800 text-white rounded-2xl p-6 md:p-8 shadow-xl relative overflow-hidden">
+                <div class="absolute -right-10 -bottom-10 h-32 w-32 bg-brandLime/10 rounded-full blur-xl"></div>
+                <div class="absolute -right-5 -top-5 h-24 w-24 bg-brandBlue/20 rounded-full blur-xl"></div>
+
+                <h3 class="text-xl font-extrabold mb-4 flex items-center gap-2">
+                    <span class="text-brandLime">Why Read Our Blog?</span>
+                </h3>
+
+                <p class="text-sm text-slate-300 font-medium uppercase tracking-wider mb-4 text-brandBlue-light">
+                    Expert Insight, Personal Touch
+                </p>
+
+                <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                    As an experienced Orthopedic Specialist in Powai, Dr. Rahul Rane uses this platform to address common concerns such as knee arthritis, joint stiffness, posture correction, injury prevention, and recovery tips.
+                </p>
+
+                <p class="text-slate-300 text-sm leading-relaxed mb-8">
+                    You'll also find cutting-edge updates on highly specialized treatments including stem cell therapy, arthroscopy, joint replacement, and limb lengthening procedures.
+                </p>
+
+                <div class="flex items-start gap-4 pt-4 border-t border-slate-700/60">
+                    <div>
+                        <h4 class="font-bold mb-2 text-white">What sets this blog apart?</h4>
+                        <p class="text-sm text-slate-300 leading-relaxed">
+                            It provides direct professional insight from a verified Orthopedic Specialist in Powai who has successfully treated thousands of patients across Mumbai. The content here is completely backed by years of intense clinical experience and a deep understanding of patient care.
+                        </p>
+                    </div>
+                </div>
             </div>
 
-            <!-- Content -->
-            <div class="md:col-span-2 p-6 md:p-8">
-              <div
-                class="flex flex-wrap items-center gap-4 text-xs font-semibold uppercase tracking-wider text-slate-400 mb-4">
-                <span class="flex items-center gap-1.5 bg-slate-100 px-2.5 py-1 rounded text-slate-600">
-                  <span class="h-1.5 w-1.5 rounded-full bg-brandLime"></span>
-                  Dr. Rane
-                </span>
-
-                <span>•</span>
-                <span>March 15, 2026</span>
-
-                <span>•</span>
-
-                <span class="text-brandBlue font-bold">
-                  Technology
-                </span>
-              </div>
-
-              <h4
-                class="text-xl md:text-2xl font-bold text-slate-900 group-hover:text-brandBlue transition-colors mb-3">
-                The Future of Joint Replacement Surgery: Advances in Technology & Techniques
-              </h4>
-
-              <p class="text-slate-600 leading-relaxed mb-6">
-                Exploring how robotics, 3D printing, and new implant materials are transforming joint replacement
-                outcomes and accelerating recovery times.
-              </p>
-
-              <a href="blog1.html"
-                class="inline-flex items-center gap-2 text-brandBlue font-bold hover:text-brandBlue-dark">
-                Read Full Article
-                <span class="text-brandLime transition-transform group-hover:translate-x-1">→</span>
-              </a>
-            </div>
-
-          </div>
-        </article>
-
-        <!-- Article 2 -->
-        <article
-          class="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 overflow-hidden group">
-          <div class="grid md:grid-cols-3">
-
-            <!-- Image -->
-            <div class="overflow-hidden">
-              <img src="https://ik.imagekit.io/iuiy6mihw/Dr.blog2.jpg" alt="Preventing Sports Injuries"
-                class="w-full h-64 md:h-full object-cover transition-transform duration-500 group-hover:scale-105">
-            </div>
-
-            <!-- Content -->
-            <div class="md:col-span-2 p-6 md:p-8">
-              <div
-                class="flex flex-wrap items-center gap-4 text-xs font-semibold uppercase tracking-wider text-slate-400 mb-4">
-                <span class="flex items-center gap-1.5 bg-slate-100 px-2.5 py-1 rounded text-slate-600">
-                  <span class="h-1.5 w-1.5 rounded-full bg-brandLime"></span>
-                  Dr. Rane
-                </span>
-
-                <span>•</span>
-                <span>February 28, 2026</span>
-
-                <span>•</span>
-
-                <span class="text-brandBlue font-bold">
-                  Prevention
-                </span>
-              </div>
-
-              <h4
-                class="text-xl md:text-2xl font-bold text-slate-900 group-hover:text-brandBlue transition-colors mb-3">
-                Preventing Sports Injuries: Tips from an Orthopaedic Expert
-              </h4>
-
-              <p class="text-slate-600 leading-relaxed mb-6">
-                Sports and physical activity are essential for a healthy lifestyle, but they also come with a risk of
-                injury. Learn the essential strategies to protect your joints and stay active safely...
-              </p>
-
-              <a href="/blog2.html"
-                class="inline-flex items-center gap-2 text-brandBlue font-bold hover:text-brandBlue-dark">
-                Read Full Article
-                <span class="text-brandLime transition-transform group-hover:translate-x-1">→</span>
-              </a>
-            </div>
-
-          </div>
-        </article>
-
-      
-        <!-- Article 3 -->
-        <article
-          class="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 overflow-hidden group">
-          <div class="grid md:grid-cols-3">
-
-            <!-- Image -->
-            <div class="overflow-hidden">
-              <img src="https://ik.imagekit.io/iuiy6mihw/blog1.jpg" alt="Understanding Joint Pain"
-                class="w-full h-64 md:h-full object-cover transition-transform duration-500 group-hover:scale-105">
-            </div>
-
-            <!-- Content -->
-            <div class="md:col-span-2 p-6 md:p-8">
-              <div
-                class="flex flex-wrap items-center gap-4 text-xs font-semibold uppercase tracking-wider text-slate-400 mb-4">
-                <span class="flex items-center gap-1.5 bg-slate-100 px-2.5 py-1 rounded text-slate-600">
-                  <span class="h-1.5 w-1.5 rounded-full bg-brandLime"></span>
-                  Dr. Rane
-                </span>
-
-                <span>•</span>
-                <span>January 12, 2026</span>
-
-                <span>•</span>
-
-                <span class="text-brandBlue font-bold">
-                  Education
-                </span>
-              </div>
-
-              <h4
-                class="text-xl md:text-2xl font-bold text-slate-900 group-hover:text-brandBlue transition-colors mb-3">
-                Understanding Joint Pain: Causes, Diagnosis & Treatment Options
-              </h4>
-
-              <p class="text-slate-600 leading-relaxed mb-6">
-                Joint pain can stem from various conditions like arthritis, sudden injury, or chronic overuse. Learn how
-                to accurately identify the cause and explore your dynamic treatment paths...
-              </p>
-
-              <a href="/blog3.html"
-                class="inline-flex items-center gap-2 text-brandBlue font-bold hover:text-brandBlue-dark">
-                Read Full Article
-                <span class="text-brandLime transition-transform group-hover:translate-x-1">→</span>
-              </a>
-            </div>
-
-          </div>
-        </article>
-
-      </div>
-
-      <!-- Sidebar -->
-      <aside class="space-y-8 mt-10 ">
-
-        <!-- Why Read Our Blog Card -->
-        <div
-          class=" my-20 bg-gradient-to-br from-slate-900 to-slate-800 text-white rounded-2xl p-6 md:p-8 shadow-xl relative overflow-hidden">
-          <div class="absolute -right-10 -bottom-10 h-32 w-32 bg-brandLime/10 rounded-full blur-xl"></div>
-          <div class="absolute -right-5 -top-5 h-24 w-24 bg-brandBlue/20 rounded-full blur-xl"></div>
-
-          <h3 class="text-xl font-extrabold mb-4 flex items-center gap-2">
-            <span class="text-brandLime">Why Read Our Blog?</span>
-          </h3>
-          <p class="text-sm text-slate-300 font-medium uppercase tracking-wider mb-4 text-brandBlue-light">
-            Expert Insight, Personal Touch
-          </p>
-          <p class="text-slate-300 text-sm leading-relaxed mb-4">
-            As an experienced Orthopedic Specialist in Powai, Dr. Rahul Rane uses this platform to address common
-            concerns such as knee arthritis, joint stiffness, posture correction, injury prevention, and recovery tips.
-          </p>
-          <p class="text-slate-300 text-sm leading-relaxed">
-            You'll also find cutting-edge updates on highly specialized treatments including stem cell therapy,
-            arthroscopy, joint replacement, and limb lengthening procedures.
-          </p>
-
-          <div class="flex items-start gap-4 my-10">
-
-            <div>
-              <h4 class="font-bold  mb-2">What sets this blog apart?</h4>
-              <p class="text-sm text-slate-300 leading-relaxed">
-                It provides direct professional insight from a verified Orthopedic Specialist in Powai who has
-                successfully treated thousands of patients across Mumbai. The content here is completely backed by years
-                of intense clinical experience and a deep understanding of patient care.
-              </p>
-            </div>
-          </div>
-        </div>
-
-
-      </aside>
+        </aside>
 
     </div>
-  </main>
+
+</main>
+
+<!-- Embedded Floating Keyframes Animation -->
+<style>
+  @keyframes float {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-18px) rotate(6deg); }
+  }
+</style>
 
    <footer class="bg-slate-950 text-white pt-20 pb-10 border-t border-slate-900 relative z-10">
       <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 pb-16 border-b border-white/10">

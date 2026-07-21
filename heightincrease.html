@@ -255,44 +255,70 @@
     </header>
 
     <!-- Introduction Presentation -->
-    <section class="py-20 md:py-28 bg-white relative overflow-hidden">
+   <section class="py-20 md:py-28 bg-white relative overflow-hidden">
 
+    <!-- Floating Background Elements (z-0 layer) -->
+    <div class="absolute inset-0 pointer-events-none z-0">
+        <!-- Floating Crystal 1 -->
+        <div class="absolute top-10 left-10 w-28 h-28 bg-gradient-to-br from-white/80 to-cyan-200/30 rounded-[30%] backdrop-blur-xl border border-white/60 shadow-2xl animate-[float_7s_ease-in-out_infinite]"></div>
 
-         <!-- Floating Crystal 1 -->
-    <div class="absolute top-10 left-10 w-28 h-28 bg-gradient-to-br from-white/80 to-cyan-200/30 rounded-[30%] backdrop-blur-xl border border-white/60 shadow-2xl crystal crystal1"></div>
+        <!-- Floating Crystal 2 -->
+        <div class="absolute top-24 right-16 w-20 h-20 bg-gradient-to-br from-blue-100/70 to-white/20 rounded-[35%] backdrop-blur-xl border border-white/60 shadow-xl animate-[float_5s_ease-in-out_1s_infinite]"></div>
 
-    <!-- Floating Crystal 2 -->
-    <div class="absolute top-24 right-16 w-20 h-20 bg-gradient-to-br from-blue-100/70 to-white/20 rounded-[35%] backdrop-blur-xl border border-white/60 shadow-xl crystal crystal2"></div>
+        <!-- Floating Crystal 3 -->
+        <div class="absolute bottom-16 left-1/4 w-24 h-24 bg-gradient-to-br from-cyan-100/70 to-white/20 rounded-[40%] backdrop-blur-xl border border-white/60 shadow-xl animate-[float_8s_ease-in-out_2s_infinite]"></div>
 
-    <!-- Floating Crystal 3 -->
-    <div class="absolute bottom-16 left-1/4 w-24 h-24 bg-gradient-to-br from-cyan-100/70 to-white/20 rounded-[40%] backdrop-blur-xl border border-white/60 shadow-xl crystal crystal3"></div>
+        <!-- Floating Crystal 4 -->
+        <div class="absolute bottom-12 right-1/4 w-32 h-32 bg-gradient-to-br from-white/80 to-blue-200/30 rounded-[28%] backdrop-blur-xl border border-white/60 shadow-2xl animate-[float_6s_ease-in-out_0.5s_infinite]"></div>
 
-    <!-- Floating Crystal 4 -->
-    <div class="absolute bottom-12 right-1/4 w-32 h-32 bg-gradient-to-br from-white/80 to-blue-200/30 rounded-[28%] backdrop-blur-xl border border-white/60 shadow-2xl crystal crystal4"></div>
+        <!-- Floating Crystal 5 -->
+        <div class="absolute top-1/2 left-1/2 w-16 h-16 bg-gradient-to-br from-cyan-100/70 to-white/20 rounded-[30%] backdrop-blur-xl border border-white/60 shadow-lg animate-[float_9s_ease-in-out_1.5s_infinite]"></div>
+    </div>
 
-    <!-- Floating Crystal 5 -->
-    <div class="absolute top-1/2 left-1/2 w-16 h-16 bg-gradient-to-br from-cyan-100/70 to-white/20 rounded-[30%] backdrop-blur-xl border border-white/60 shadow-lg crystal crystal5"></div>
+    <!-- Main Content Container -->
+    <div class="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center relative z-10">
 
-
-        <div class="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
-            <div class="intro-image relative">
-                <img src="https://ik.imagekit.io/iuiy6mihw/height.jpg" alt="Dr. Rahul Rane height increase consultation" class="w-full h-auto rounded-3xl shadow-2xl transition-transform duration-500 hover:scale-[1.01]" />
-            </div>
-            <div class="intro-content space-y-6">
-                <span class="text-luxuryGold font-semibold tracking-wider text-sm uppercase block">Best Doctor for Height Increase in Powai</span>
-                <h2 class="text-3xl md:text-5xl font-bold font-serif text-brandNavy-deep">Confidence Through Science</h2>
-                <p class="text-slate-600 leading-relaxed">
-                    Height plays an important role in a person's confidence, physical appearance, and overall well-being. At Dr. Rahul Rane's Orthopaedic & Spine Care Clinic, we provide safe and effective medical solutions for individuals looking to enhance their height.
-                </p>
-                <div class="text-lg md:text-xl italic border-l-4 border-brandGold pl-6 my-6 text-brandNavy-deep font-serif leading-relaxed bg-brandLight/60 py-4 pr-4 rounded-r-xl">
-                    “Our height increase program is designed for individuals seeking results through non-surgical or surgical methods, under full medical supervision.”
-                </div>
-                <p class="text-slate-600 leading-relaxed">
-                    Known as the <strong class="text-brandNavy-deep font-semibold">Best Doctor for Height Increase in Powai</strong>, Dr. Rane offers advanced, medically supervised treatments that focus on bone growth, posture correction, and long-term skeletal health.
-                </p>
-            </div>
+        <!-- Image Wrapper -->
+        <div class="intro-image relative">
+            <img src="https://ik.imagekit.io/iuiy6mihw/height.jpg" alt="Dr. Rahul Rane height increase consultation" class="w-full h-auto rounded-3xl shadow-2xl transition-transform duration-500 hover:scale-[1.01]" />
         </div>
-    </section>
+
+        <!-- Text Content -->
+        <div class="intro-content space-y-6">
+
+            <span class="text-luxuryGold font-semibold tracking-wider text-sm uppercase block">
+                Best Doctor for Height Increase in Powai
+            </span>
+
+            <h2 class="text-3xl md:text-5xl font-bold font-serif text-brandNavy-deep">
+                Confidence Through Science
+            </h2>
+
+            <p class="text-slate-600 leading-relaxed">
+                Height plays an important role in a person's confidence, physical appearance, and overall well-being. At Dr. Rahul Rane's Orthopaedic & Spine Care Clinic, we provide safe and effective medical solutions for individuals looking to enhance their height.
+            </p>
+
+            <div class="text-lg md:text-xl italic border-l-4 border-brandGold pl-6 my-6 text-brandNavy-deep font-serif leading-relaxed bg-brandLight/60 py-4 pr-4 rounded-r-xl">
+                “Our height increase program is designed for individuals seeking results through non-surgical or surgical methods, under full medical supervision.”
+            </div>
+
+            <p class="text-slate-600 leading-relaxed">
+                Known as the <strong class="text-brandNavy-deep font-semibold">Best Doctor for Height Increase in Powai</strong>, Dr. Rane offers advanced, medically supervised treatments that focus on bone growth, posture correction, and long-term skeletal health.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Embedded Floating Keyframes Animation -->
+<style>
+  @keyframes float {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-18px) rotate(6deg); }
+  }
+</style>
 
     <!-- Treatment Approaches Matrix -->
     <section class="py-20 bg-white border-t border-slate-100">
@@ -343,54 +369,82 @@
     </section>
 
     <!-- Surgical Techniques Deep-Dive Columns -->
-    <section class="py-20 bg-brandLight/30 border-t border-slate-100 relative overflow-hidden">
+   <section class="py-20 bg-brandLight/30 border-t border-slate-100 relative overflow-hidden">
 
-         <!-- Floating Crystal 1 -->
-    <div class="absolute top-10 left-10 w-28 h-28 bg-gradient-to-br from-white/80 to-cyan-200/30 rounded-[30%] backdrop-blur-xl border border-white/60 shadow-2xl crystal crystal1"></div>
+    <!-- Floating Background Elements (z-0 layer) -->
+    <div class="absolute inset-0 pointer-events-none z-0">
+        <!-- Floating Crystal 1 -->
+        <div class="absolute top-10 left-10 w-28 h-28 bg-gradient-to-br from-white/80 to-cyan-200/30 rounded-[30%] backdrop-blur-xl border border-white/60 shadow-2xl animate-[float_7s_ease-in-out_infinite]"></div>
 
-    <!-- Floating Crystal 2 -->
-    <div class="absolute top-24 right-16 w-20 h-20 bg-gradient-to-br from-blue-100/70 to-white/20 rounded-[35%] backdrop-blur-xl border border-white/60 shadow-xl crystal crystal2"></div>
+        <!-- Floating Crystal 2 -->
+        <div class="absolute top-24 right-16 w-20 h-20 bg-gradient-to-br from-blue-100/70 to-white/20 rounded-[35%] backdrop-blur-xl border border-white/60 shadow-xl animate-[float_5s_ease-in-out_1s_infinite]"></div>
 
-    <!-- Floating Crystal 3 -->
-    <div class="absolute bottom-16 left-1/4 w-24 h-24 bg-gradient-to-br from-cyan-100/70 to-white/20 rounded-[40%] backdrop-blur-xl border border-white/60 shadow-xl crystal crystal3"></div>
+        <!-- Floating Crystal 3 -->
+        <div class="absolute bottom-16 left-1/4 w-24 h-24 bg-gradient-to-br from-cyan-100/70 to-white/20 rounded-[40%] backdrop-blur-xl border border-white/60 shadow-xl animate-[float_8s_ease-in-out_2s_infinite]"></div>
 
-    <!-- Floating Crystal 4 -->
-    <div class="absolute bottom-12 right-1/4 w-32 h-32 bg-gradient-to-br from-white/80 to-blue-200/30 rounded-[28%] backdrop-blur-xl border border-white/60 shadow-2xl crystal crystal4"></div>
+        <!-- Floating Crystal 4 -->
+        <div class="absolute bottom-12 right-1/4 w-32 h-32 bg-gradient-to-br from-white/80 to-blue-200/30 rounded-[28%] backdrop-blur-xl border border-white/60 shadow-2xl animate-[float_6s_ease-in-out_0.5s_infinite]"></div>
 
-    <!-- Floating Crystal 5 -->
-    <div class="absolute top-1/2 left-1/2 w-16 h-16 bg-gradient-to-br from-cyan-100/70 to-white/20 rounded-[30%] backdrop-blur-xl border border-white/60 shadow-lg crystal crystal5"></div>
-        <div class="max-w-7xl mx-auto px-6 md:px-12 relative ">
-            <span class="font-serif text-lg md:text-xl font-semibold text-brandNavy tracking-[3px] uppercase mb-2 block">Advanced Techniques</span>
-            <h2 class="text-3xl md:text-4xl font-serif font-bold text-brandNavy-deep">Modern Limb Lengthening</h2>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 relative z-[9999]">
-                <!-- Column 01 -->
-                <div class="bg-white p-8 rounded-3xl shadow-md border border-slate-100 transition-all duration-500 hover:-translate-y-2 hover:shadow-xl">
-                    <div class="text-4xl md:text-5xl font-bold font-serif text-brandNavy-light mb-4">01</div>
-                    <h3 class="text-xl font-bold text-brandNavy-deep mb-2">External Fixator</h3>
-                    <p class="text-sm text-slate-600 leading-relaxed">
-                        A time-tested method using a secure external frame to gradually separate bone segments, safely allowing new bone structural configurations to form inside the gap.
-                    </p>
-                </div>
-                <!-- Column 02 -->
-                <div class="bg-white p-8 rounded-3xl shadow-md border border-slate-100 transition-all duration-500 hover:-translate-y-2 hover:shadow-xl">
-                    <div class="text-4xl md:text-5xl font-bold font-serif text-brandNavy-light mb-4">02</div>
-                    <h3 class="text-xl font-bold text-brandNavy-deep mb-2">Internal Nail System</h3>
-                    <p class="text-sm text-slate-600 leading-relaxed">
-                        An implantable, magnetically controlled internal nail designed to lengthen from inside the bone architecture — providing a more comfortable and discreet recovery pathway.
-                    </p>
-                </div>
-                <!-- Column 03 -->
-                <div class="bg-white p-8 rounded-3xl shadow-md border border-slate-100 transition-all duration-500 hover:-translate-y-2 hover:shadow-xl">
-                    <div class="text-4xl md:text-5xl font-bold font-serif text-brandNavy-light mb-4">03</div>
-                    <h3 class="text-xl font-bold text-brandNavy-deep mb-2">Rehabilitation Protocol</h3>
-                    <p class="text-sm text-slate-600 leading-relaxed">
-                        Highly structured post-treatment physiotherapy combined with precise follow-up timelines to guarantee bone density healing, localized muscular protection, and functional movement.
-                    </p>
-                </div>
-            </div>
+        <!-- Floating Crystal 5 -->
+        <div class="absolute top-1/2 left-1/2 w-16 h-16 bg-gradient-to-br from-cyan-100/70 to-white/20 rounded-[30%] backdrop-blur-xl border border-white/60 shadow-lg animate-[float_9s_ease-in-out_1.5s_infinite]"></div>
+    </div>
+
+    <!-- Content Container -->
+    <div class="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
+
+        <!-- Heading -->
+        <div>
+            <span class="font-serif text-lg md:text-xl font-semibold text-brandNavy tracking-[3px] uppercase mb-2 block">
+                Advanced Techniques
+            </span>
+            <h2 class="text-3xl md:text-4xl font-serif font-bold text-brandNavy-deep">
+                Modern Limb Lengthening
+            </h2>
         </div>
-    </section>
+
+        <!-- Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+
+            <!-- Column 01 -->
+            <div class="bg-white p-8 rounded-3xl shadow-md border border-slate-100 transition-all duration-500 hover:-translate-y-2 hover:shadow-xl">
+                <div class="text-4xl md:text-5xl font-bold font-serif text-brandNavy-light mb-4">01</div>
+                <h3 class="text-xl font-bold text-brandNavy-deep mb-2">External Fixator</h3>
+                <p class="text-sm text-slate-600 leading-relaxed">
+                    A time-tested method using a secure external frame to gradually separate bone segments, safely allowing new bone structural configurations to form inside the gap.
+                </p>
+            </div>
+
+            <!-- Column 02 -->
+            <div class="bg-white p-8 rounded-3xl shadow-md border border-slate-100 transition-all duration-500 hover:-translate-y-2 hover:shadow-xl">
+                <div class="text-4xl md:text-5xl font-bold font-serif text-brandNavy-light mb-4">02</div>
+                <h3 class="text-xl font-bold text-brandNavy-deep mb-2">Internal Nail System</h3>
+                <p class="text-sm text-slate-600 leading-relaxed">
+                    An implantable, magnetically controlled internal nail designed to lengthen from inside the bone architecture — providing a more comfortable and discreet recovery pathway.
+                </p>
+            </div>
+
+            <!-- Column 03 -->
+            <div class="bg-white p-8 rounded-3xl shadow-md border border-slate-100 transition-all duration-500 hover:-translate-y-2 hover:shadow-xl">
+                <div class="text-4xl md:text-5xl font-bold font-serif text-brandNavy-light mb-4">03</div>
+                <h3 class="text-xl font-bold text-brandNavy-deep mb-2">Rehabilitation Protocol</h3>
+                <p class="text-sm text-slate-600 leading-relaxed">
+                    Highly structured post-treatment physiotherapy combined with precise follow-up timelines to guarantee bone density healing, localized muscular protection, and functional movement.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Embedded Floating Keyframes Animation -->
+<style>
+  @keyframes float {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-18px) rotate(6deg); }
+  }
+</style>
 
     <!-- Assessment Progression Track -->
     <section class="py-20 bg-brandNavy-deep text-white">
@@ -428,33 +482,50 @@
     </section>
 
     <!-- Core Brand Pillars -->
-    <section class="py-20 bg-white relative overflow-hidden border-t border-slate-100">
+   <section class="py-20 bg-white relative overflow-hidden border-t border-slate-100">
 
+    <!-- Floating Background Elements (z-0 layer) -->
+    <div class="absolute inset-0 pointer-events-none z-0">
+        <!-- Floating Crystal 1 -->
+        <div class="absolute top-10 left-10 w-28 h-28 bg-gradient-to-br from-white/80 to-cyan-200/30 rounded-[30%] backdrop-blur-xl border border-white/60 shadow-2xl animate-[float_7s_ease-in-out_infinite]"></div>
 
- <!-- Floating Crystal 1 -->
-    <div class="absolute top-10 left-10 w-28 h-28 bg-gradient-to-br from-white/80 to-cyan-200/30 rounded-[30%] backdrop-blur-xl border border-white/60 shadow-2xl crystal crystal1"></div>
+        <!-- Floating Crystal 2 -->
+        <div class="absolute top-24 right-16 w-20 h-20 bg-gradient-to-br from-blue-100/70 to-white/20 rounded-[35%] backdrop-blur-xl border border-white/60 shadow-xl animate-[float_5s_ease-in-out_1s_infinite]"></div>
 
-    <!-- Floating Crystal 2 -->
-    <div class="absolute top-24 right-16 w-20 h-20 bg-gradient-to-br from-blue-100/70 to-white/20 rounded-[35%] backdrop-blur-xl border border-white/60 shadow-xl crystal crystal2"></div>
+        <!-- Floating Crystal 3 -->
+        <div class="absolute bottom-16 left-1/4 w-24 h-24 bg-gradient-to-br from-cyan-100/70 to-white/20 rounded-[40%] backdrop-blur-xl border border-white/60 shadow-xl animate-[float_8s_ease-in-out_2s_infinite]"></div>
 
-    <!-- Floating Crystal 3 -->
-    <div class="absolute bottom-16 left-1/4 w-24 h-24 bg-gradient-to-br from-cyan-100/70 to-white/20 rounded-[40%] backdrop-blur-xl border border-white/60 shadow-xl crystal crystal3"></div>
+        <!-- Floating Crystal 4 -->
+        <div class="absolute bottom-12 right-1/4 w-32 h-32 bg-gradient-to-br from-white/80 to-blue-200/30 rounded-[28%] backdrop-blur-xl border border-white/60 shadow-2xl animate-[float_6s_ease-in-out_0.5s_infinite]"></div>
 
-    <!-- Floating Crystal 4 -->
-    <div class="absolute bottom-12 right-1/4 w-32 h-32 bg-gradient-to-br from-white/80 to-blue-200/30 rounded-[28%] backdrop-blur-xl border border-white/60 shadow-2xl crystal crystal4"></div>
+        <!-- Floating Crystal 5 -->
+        <div class="absolute top-1/2 left-1/2 w-16 h-16 bg-gradient-to-br from-cyan-100/70 to-white/20 rounded-[30%] backdrop-blur-xl border border-white/60 shadow-lg animate-[float_9s_ease-in-out_1.5s_infinite]"></div>
+    </div>
 
-    <!-- Floating Crystal 5 -->
-    <div class="absolute top-1/2 left-1/2 w-16 h-16 bg-gradient-to-br from-cyan-100/70 to-white/20 rounded-[30%] backdrop-blur-xl border border-white/60 shadow-lg crystal crystal5"></div>
+    <!-- Content Container -->
+    <div class="max-w-4xl mx-auto px-6 md:px-12 text-center space-y-4 relative z-10">
+        <span class="font-serif text-lg md:text-xl font-semibold text-brandNavy tracking-[3px] uppercase block">
+            Why Choose Us
+        </span>
 
+        <h2 class="text-3xl md:text-4xl font-serif font-bold text-brandNavy-deep">
+            Trust, Transparency, Results
+        </h2>
 
-        <div class="max-w-4xl mx-auto px-6 md:px-12 text-center space-y-4">
-            <span class="font-serif text-lg md:text-xl font-semibold text-brandNavy tracking-[3px] uppercase block">Why Choose Us</span>
-            <h2 class="text-3xl md:text-4xl font-serif font-bold text-brandNavy-deep">Trust, Transparency, Results</h2>
-            <p class="text-slate-600 leading-relaxed text-base md:text-lg font-light relative z-[9999]">
-                Dr. Rane's personalized approach, attention to detail, and focus on patient safety have earned him the trust of individuals across Mumbai seeking height enhancement. As a premier specialist for Height Increase treatments in Powai, he is entirely committed to delivering optimal results while maintaining full transparency and exceptional care throughout your entire medical process.
-            </p>
-        </div>
-    </section>
+        <p class="text-slate-600 leading-relaxed text-base md:text-lg font-light">
+            Dr. Rane's personalized approach, attention to detail, and focus on patient safety have earned him the trust of individuals across Mumbai seeking height enhancement. As a premier specialist for Height Increase treatments in Powai, he is entirely committed to delivering optimal results while maintaining full transparency and exceptional care throughout your entire medical process.
+        </p>
+    </div>
+
+</section>
+
+<!-- Embedded Floating Keyframes Animation -->
+<style>
+  @keyframes float {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-18px) rotate(6deg); }
+  }
+</style>
 
     <!-- Interaction Hub (Form and Emergency Module) -->
     <section class="py-20 bg-brandLight border-t border-slate-100">
